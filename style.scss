@@ -1,0 +1,17 @@
+@use 'reset';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.header {
+    position: absolute;
+width: 1440px;
+height: 110px;
+left: 0px;
+top: 0px;
+background: #17161F;
+}
