@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,6 +56,7 @@ table {
 body {
   font-family: "Exo 2", sans-serif;
   background: #5B616B;
+  color: #ffffff;
 }
 
 .container {
@@ -80,6 +82,9 @@ body {
 .header .header-menu {
   gap: 0px 40px;
 }
+.header .header-menu li {
+  list-style: none;
+}
 .header .header-menu li .header-menu-item.active {
   color: #ffffff;
   font-weight: 700;
@@ -98,8 +103,111 @@ body {
   color: #FA2702;
   border: 1px solid #FA2702;
   border-radius: 8px;
+  padding: 12px 48px;
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+}
+.header .header-button:hover {
+  color: #ffffff;
+  background-color: #FA2702;
+}
+.header .header-button:active {
+  color: #ffffff;
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
+
+.main .review-section {
+  background-color: #1F1E28;
+  height: 690px;
+  padding: 80px 0px;
+}
+.main .review-section .review-section-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.main .review-section .review-section-content {
+  justify-content: space-between;
+  align-items: center;
+  gap: 85px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text::before {
+  content: "•";
+  margin-right: 25px;
+  margin-left: -38px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text {
+  margin-left: 38px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  margin-bottom: 60px;
+}
+.main .review-section .review-section-content .review-section-content-details {
+  justify-content: space-between;
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 103px;
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .review-section-content-details-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #4EBD09;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-date {
+  background-image: url(/images/item-date-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-time {
+  background-image: url(/images/item-time-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-place {
+  background-image: url(/images/item-place-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-cost {
+  background-image: url(/images/item-cost-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.main .review-section .review-section-content .review-section-content-btn {
+  margin-top: 75px;
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.main .review-section .review-section-content .review-section-content-btn:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .review-section .review-section-content .review-section-content-btn:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
 }
