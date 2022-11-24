@@ -54,13 +54,52 @@ table {
 
 body {
   font-family: "Exo 2", sans-serif;
+  background: #5B616B;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
 }
 
 .header {
-  position: absolute;
-  width: 1440px;
   height: 110px;
-  left: 0px;
-  top: 0px;
   background: #17161F;
+  color: white;
+}
+.header .header-items {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-top: 24px;
+}
+.header .header-menu {
+  gap: 0px 40px;
+}
+.header .header-menu li .header-menu-item.active {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+.header .header-menu li .header-menu-item {
+  color: #989898;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header .header-button {
+  width: 184px;
+  height: 48px;
+  background-color: transparent;
+  color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
 }
