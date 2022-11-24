@@ -25,7 +25,7 @@
 }
 body {
     font-family: 'Exo 2', sans-serif;
-    background: #5B616B;
+    background: #17161F;
     color: #ffffff;
 }
 .container {
@@ -154,6 +154,24 @@ body {
                     margin-top: 75px;
                     @include mainButton();
                 }
+        }
+    }
+    .about-section {
+        height: 570px;
+        padding: 100px 0px;
+        .about-section-wrapper {
+            align-items: center;
+            gap: 100px;
+            .about-section-content {
+                p:nth-child(1) {
+                    @include fonts.h2();
+                    margin-bottom: 20px;
+                }
+                p:nth-child(2) {
+                    @include fonts.t6();
+                }
+                
+            }
         }
     }
 }

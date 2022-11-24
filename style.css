@@ -55,7 +55,7 @@ table {
 
 body {
   font-family: "Exo 2", sans-serif;
-  background: #5B616B;
+  background: #17161F;
   color: #ffffff;
 }
 
@@ -210,4 +210,24 @@ body {
 .main .review-section .review-section-content .review-section-content-btn:active {
   background-color: #FA7A63;
   border-color: #FA7A63;
+}
+.main .about-section {
+  height: 570px;
+  padding: 100px 0px;
+}
+.main .about-section .about-section-wrapper {
+  align-items: center;
+  gap: 100px;
+}
+.main .about-section .about-section-wrapper .about-section-content p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.main .about-section .about-section-wrapper .about-section-content p:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
 }
