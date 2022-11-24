@@ -110,6 +110,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  line-height: 19px;
   cursor: pointer;
 }
 .header .header-button:hover {
@@ -132,6 +133,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 30px;
+  line-height: 36px;
 }
 .main .review-section .review-section-content {
   justify-content: space-between;
@@ -150,6 +152,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 36px;
+  line-height: 43px;
   margin-bottom: 40px;
   margin-top: 50px;
 }
@@ -193,6 +196,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 19px;
 }
 .main .review-section .review-section-content .review-section-content-btn {
   margin-top: 75px;
@@ -206,6 +210,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  line-height: 19px;
 }
 .main .review-section .review-section-content .review-section-content-btn:hover {
   background-color: #A61A01;
@@ -227,6 +232,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 36px;
+  line-height: 43px;
   margin-bottom: 20px;
 }
 .main .about-section .about-section-wrapper .about-section-content p:nth-child(2) {
@@ -255,6 +261,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  line-height: 19px;
 }
 .main .suitable-section .suitable-section-content .suitable-btn:hover {
   background-color: #A61A01;
@@ -268,6 +275,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 36px;
+  line-height: 43px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -293,6 +301,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 20px;
+  line-height: 24px;
   color: #4EBD09;
 }
 .main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
@@ -317,4 +326,34 @@ body {
 }
 .main .suitable-section .suitable-wrapper .suitable-item-5 {
   grid-area: e;
+}
+.main .aspect-section {
+  height: 570px;
+  padding: 100px 0px;
+}
+.main .aspect-section .aspect-section-content {
+  justify-content: center;
+  align-items: center;
+  gap: 220px;
+}
+.main .aspect-section .aspect-section-content .aspect-section-content-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  margin-bottom: 20px;
+}
+.main .aspect-section .aspect-section-content > div:first-child {
+  width: 440px;
+}
+.main .aspect-section .aspect-section-content .aspect-section-list-item {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.main .aspect-section .aspect-section-content .aspect-section-list-item > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }

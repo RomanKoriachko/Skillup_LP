@@ -240,4 +240,28 @@ body {
             }
         }
     }
+    .aspect-section {
+        height: 570px;
+        padding: 100px 0px;
+        .aspect-section-content {
+            justify-content: center;
+            align-items: center;
+            gap: 220px;
+            .aspect-section-content-header {
+                @include fonts.h3();
+                margin-bottom: 20px;
+            }
+            >div:first-child {
+                width: 440px;
+            }
+            .aspect-section-list-item {
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 16px;
+                >p{
+                    @include fonts.t5();
+                }
+            }
+        }
+    }
 }

@@ -2,11 +2,13 @@
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
     font-size: 64px;
+    line-height: 77px;
 }
 @mixin h2() {
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 36px;
+    line-height: 43px;
 }
 @mixin h3() {
     font-family: 'Exo 2', sans-serif;
@@ -18,11 +20,13 @@
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
     font-size: 30px;
+    line-height: 36px;
 }
 @mixin h5() {
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 20px;
+    line-height: 24px;
 }
 @mixin h6() {
     font-family: 'Exo 2', sans-serif;
@@ -34,26 +38,31 @@
     font-family: 'Exo 2', sans-serif;
     font-weight: 500;
     font-size: 24px;
+    line-height: 29px;
 }
 @mixin t2() {
     font-family: 'Exo 2', sans-serif;
     font-weight: 300;
     font-size: 24px;
+    line-height: 29px;
 }
 @mixin t3() {
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    line-height: 24px;
 }
 @mixin t4() {
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    line-height: 19px;
 }
 @mixin t5() {
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 19px;
 }
 @mixin t6() {
     font-family: 'Exo 2', sans-serif;
@@ -65,4 +74,5 @@
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    line-height: 19px;
 }
