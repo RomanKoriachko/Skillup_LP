@@ -314,5 +314,9 @@ body {
                 padding: 0px 75px;
             }
         }
+        .plan-section-btn {
+            margin-top: 50px;
+            @include mainButton();
+        }
     }
 }

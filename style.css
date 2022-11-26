@@ -415,3 +415,25 @@ body {
   background-size: 100% 100%;
   padding: 0px 75px;
 }
+.main .plan-section .plan-section-btn {
+  margin-top: 50px;
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main .plan-section .plan-section-btn:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .plan-section .plan-section-btn:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
