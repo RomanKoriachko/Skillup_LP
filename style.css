@@ -465,6 +465,11 @@ body {
   width: 600px;
   justify-self: end;
 }
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper {
+  padding: 24px 0px;
+  background-color: #17161F;
+  cursor: pointer;
+}
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item {
   align-items: center;
   justify-content: space-between;
@@ -490,17 +495,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  transition: 0.3s all;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .active {
+  background-image: url(/images/benefits-section-arrow-up-img.png);
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-subitem {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 145%;
-  margin-top: 14px;
+  margin-top: -45px;
   margin-left: 44px;
   margin-right: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+  z-index: -1;
 }
-.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item-line {
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .active {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 14px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-line {
   border-bottom: 1px solid #4D4D4D;
-  margin: 24px 0px;
 }

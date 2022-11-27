@@ -341,6 +341,9 @@ body {
                     width: 600px;
                     justify-self: end;
                     .benefits-section-item-wrapper {
+                        padding: 24px 0px;
+                        background-color: #17161F;
+                        cursor: pointer;
                         .benefits-section-item {
                             align-items: center;
                             justify-content: space-between;
@@ -362,18 +365,30 @@ body {
                                 background-position: center;
                                 background-repeat: no-repeat;
                                 background-size: 100%;
+                                transition: .3s all;
+                            }
+                            .active {
+                                background-image: url(/images/benefits-section-arrow-up-img.png)
                             }
                         }
                         .benefits-section-subitem {
                             @include fonts.t6();
-                            margin-top: 14px;
+                            margin-top: -45px;
                             margin-left: 44px;
                             margin-right: 40px;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .3s all;
+                            z-index: -1;
                         }
-                        .benefits-section-item-line {
-                            border-bottom: 1px solid #4D4D4D;
-                            margin: 24px 0px;
+                        .active {
+                            opacity: 1;
+                            visibility: visible;
+                            margin-top: 14px;
                         }
+                    }
+                    .benefits-section-item-line {
+                        border-bottom: 1px solid #4D4D4D;
                     }
                 }
             }
