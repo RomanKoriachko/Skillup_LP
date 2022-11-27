@@ -407,6 +407,41 @@ body {
         .big-container {
             margin: 0 auto;
             max-width: 1440px;
+            .slider {
+                .slide-1 {
+                    background-image: url(/images/video-pic.png);
+                    height: 742px;
+                }
+                .slide-2 {
+                    background-image: url(/images/video-pic.png);
+                    height: 742px;
+                }
+                .slide-3 {
+                    background-image: url(/images/video-pic.png);
+                    height: 742px;
+                }
+                .slick-prev:before, .slick-next:before {
+                    content: "";
+                    
+                }
+                .slick-prev, .slick-next {
+                    width: 20px;
+                    height: 40px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .slick-prev {
+                    left: 125px;
+                    background-image: url(/images/arrow-left.png);
+                    z-index: 10;
+                }
+                .slick-next {
+                    right: 125px;
+                    background-image: url(/images/arrow-right.png);
+                    z-index: 10;
+                }
+            }
         }
     }
 }

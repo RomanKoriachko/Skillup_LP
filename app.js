@@ -8,3 +8,7 @@ for (let i = 0; i < dropdownMenu.length; i++) {
     dropdownButton[i].classList.toggle("active-btn");
   });
 }
+
+$(document).ready(function () {
+  $(".slider").slick({});
+});
