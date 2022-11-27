@@ -344,6 +344,7 @@ body {
                         .benefits-section-item {
                             align-items: center;
                             justify-content: space-between;
+                            cursor: pointer;
                             >div:nth-child(1) {
                                 align-items: center;
                                 >img {
@@ -353,7 +354,7 @@ body {
                                     @include fonts.h5();
                                 }
                             }
-                            button{
+                            .benefits-section-item-btn{
                                 height: 6px;
                                 width: 12px;
                                 border: none;
@@ -369,6 +370,16 @@ body {
                             margin-top: 14px;
                             margin-left: 44px;
                             margin-right: 40px;
+                            opacity: 0;
+                            visibility: hidden;
+                            display: none;
+                            transition: .3s all;
+                        }
+                        .active {
+                            opacity: 1;
+                            visibility: visible;
+                            display: block;
+                            transition: .3s all;
                         }
                         .benefits-section-item-line {
                             border-bottom: 1px solid #4D4D4D;
