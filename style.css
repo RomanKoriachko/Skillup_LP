@@ -113,6 +113,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   cursor: pointer;
+  transition: 0.3s all;
 }
 .header .header-button:hover {
   color: #ffffff;
@@ -212,6 +213,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  transition: 0.3s all;
 }
 .main .review-section .review-section-content .review-section-content-btn:hover {
   background-color: #A61A01;
@@ -263,6 +265,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  transition: 0.3s all;
 }
 .main .suitable-section .suitable-section-content .suitable-btn:hover {
   background-color: #A61A01;
@@ -429,6 +432,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  transition: 0.3s all;
 }
 .main .plan-section .plan-section-btn:hover {
   background-color: #A61A01;
@@ -609,6 +613,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  transition: 0.3s all;
 }
 .main .career-section .career-section-wrapper .career-section-text button:hover {
   background-color: #A61A01;
@@ -761,6 +766,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  transition: 0.3s all;
   width: 490px;
 }
 .main .form-section .form-section-wrapper .form-wrapper button:hover {
@@ -770,4 +776,59 @@ body {
 .main .form-section .form-section-wrapper .form-wrapper button:active {
   background-color: #FA7A63;
   border-color: #FA7A63;
+}
+
+.footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: 300px 900px;
+  gap: 120px;
+}
+.footer .footer-wrapper .contacts-block {
+  padding: 41px 0px;
+}
+.footer .footer-wrapper .contacts-block .contacts-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 50px;
+}
+.footer .footer-wrapper .contacts-block .contacts-t1 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+.footer .footer-wrapper .contacts-block .contacts-t2 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 40px;
+}
+.footer .footer-wrapper .contacts-block .social-media-links {
+  justify-content: space-between;
+}
+.footer .footer-wrapper .contacts-block .social-media-links button {
+  width: 37px;
+  height: 37px;
+  background: transparent;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(1) {
+  background-image: url(/images/icon-instagram.png);
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(2) {
+  background-image: url(/images/icon-youtube.png);
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(3) {
+  background-image: url(/images/icon-linkedin.png);
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(4) {
+  background-image: url(/images/icon-facebook.png);
 }

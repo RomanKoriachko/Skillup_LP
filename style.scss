@@ -10,6 +10,7 @@
     border-radius: 8px;
     cursor: pointer;
     @include fonts.b1();
+    transition: .3s all;
     &:hover {
         background-color: #A61A01;
         border-color: #A61A01;
@@ -77,6 +78,7 @@ body {
         padding: 12px 48px;
         @include fonts.b1;
         cursor: pointer;
+        transition: .3s all;
         &:hover {
             color: #ffffff;
             background-color: #FA2702;
@@ -565,6 +567,56 @@ body {
                 button {
                     @include mainButton();
                     width: 490px;
+                }
+            }
+        }
+    }
+}
+
+// ----------------------- Footer -----------------------
+
+.footer {
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 300px 900px;
+        gap: 120px;
+        .contacts-block {
+            padding: 41px 0px;
+            .contacts-header {
+                @include fonts.h2();
+                margin-bottom: 50px;
+            }
+            .contacts-t1 {
+                @include fonts.t1();
+                margin-bottom: 15px;
+            }
+            .contacts-t2 {
+                @include fonts.t2();
+                margin-bottom: 40px;
+            }
+            .social-media-links {
+                justify-content: space-between;
+                button{
+                    width: 37px;
+                    height: 37px;
+                    background: transparent;
+                    border: none;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    cursor: pointer;
+                }
+                button:nth-child(1) {
+                    background-image: url(/images/icon-instagram.png);
+                }
+                button:nth-child(2) {
+                    background-image: url(/images/icon-youtube.png);
+                }
+                button:nth-child(3) {
+                    background-image: url(/images/icon-linkedin.png);
+                }
+                button:nth-child(4) {
+                    background-image: url(/images/icon-facebook.png);
                 }
             }
         }
