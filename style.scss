@@ -444,4 +444,26 @@ body {
             }
         }
     }
+    .career-section {
+        padding: 100px 0px;
+        .career-section-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            .career-section-text {
+                width: 380px;
+                p:nth-child(1) {
+                    @include fonts.h3();
+                }
+                p:nth-child(2) {
+                    @include fonts.t6();
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+                button{
+                    @include mainButton();
+                }
+            }
+        }
+    }
 }

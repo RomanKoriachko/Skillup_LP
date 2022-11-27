@@ -571,3 +571,49 @@ body {
   background-image: url(/images/arrow-right.png);
   z-index: 10;
 }
+.main .career-section {
+  padding: 100px 0px;
+}
+.main .career-section .career-section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.main .career-section .career-section-wrapper .career-section-text {
+  width: 380px;
+}
+.main .career-section .career-section-wrapper .career-section-text p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+}
+.main .career-section .career-section-wrapper .career-section-text p:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.main .career-section .career-section-wrapper .career-section-text button {
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main .career-section .career-section-wrapper .career-section-text button:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .career-section .career-section-wrapper .career-section-text button:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
