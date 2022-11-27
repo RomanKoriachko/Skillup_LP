@@ -445,13 +445,13 @@ body {
   margin: 0 auto;
   max-width: 1440px;
   background-image: url(/images/benefits-section-bg.png);
-  background-position: left;
+  background-position-x: left;
+  background-position-y: 150px;
   background-repeat: no-repeat;
 }
 .main .benefits-section .big-container .benefits-section-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  z-index: 10;
 }
 .main .benefits-section .big-container .benefits-section-content > p:nth-child(1) {
   font-family: "Exo 2", sans-serif;
@@ -464,6 +464,7 @@ body {
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu {
   width: 600px;
   justify-self: end;
+  margin-top: -20px;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper {
   padding: 24px 0px;
@@ -497,10 +498,10 @@ body {
   background-size: 100%;
   transition: 0.3s all;
 }
-.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .active {
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .active-btn {
   background-image: url(/images/benefits-section-arrow-up-img.png);
 }
-.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-subitem {
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-subitem {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -513,10 +514,11 @@ body {
   transition: 0.3s all;
   z-index: -1;
 }
-.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .active {
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .active {
   opacity: 1;
   visibility: visible;
-  margin-top: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-line {
   border-bottom: 1px solid #4D4D4D;

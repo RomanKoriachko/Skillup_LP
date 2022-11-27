@@ -326,12 +326,12 @@ body {
             margin: 0 auto;
             max-width: 1440px;
             background-image: url(/images/benefits-section-bg.png);
-            background-position: left;
+            background-position-x: left;
+            background-position-y: 150px;
             background-repeat: no-repeat;
             .benefits-section-content {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                z-index: 10;
                 >p:nth-child(1) {
                     @include fonts.h3();
                     width: 330px;
@@ -340,6 +340,7 @@ body {
                 .benefits-section-menu {
                     width: 600px;
                     justify-self: end;
+                    margin-top: -20px;
                     .benefits-section-item-wrapper {
                         padding: 24px 0px;
                         background-color: #17161F;
@@ -367,25 +368,26 @@ body {
                                 background-size: 100%;
                                 transition: .3s all;
                             }
-                            .active {
+                            .active-btn {
                                 background-image: url(/images/benefits-section-arrow-up-img.png)
                             }
                         }
-                        .benefits-section-subitem {
-                            @include fonts.t6();
-                            margin-top: -45px;
-                            margin-left: 44px;
-                            margin-right: 40px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transition: .3s all;
-                            z-index: -1;
-                        }
-                        .active {
-                            opacity: 1;
-                            visibility: visible;
-                            margin-top: 14px;
-                        }
+                    }
+                    .benefits-section-subitem {
+                        @include fonts.t6();
+                        margin-top: -45px;
+                        margin-left: 44px;
+                        margin-right: 40px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .3s all;
+                        z-index: -1;
+                    }
+                    .active {
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: -10px;
+                        margin-bottom: 20px;
                     }
                     .benefits-section-item-line {
                         border-bottom: 1px solid #4D4D4D;
