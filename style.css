@@ -647,3 +647,44 @@ body {
 .main .count-section .count-section-wrapper .count-section-item:last-child {
   width: 240px;
 }
+.main .companies-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.main .companies-section .companies-section-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 50px;
+}
+.main .companies-section .companies-section-wrapper {
+  justify-content: space-between;
+}
+.main .companies-section .companies-section-wrapper .companies-section-item {
+  width: 184px;
+  height: 184px;
+  border: 4px solid #333142;
+  border-radius: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .companies-section .companies-section-wrapper .company-1 {
+  background-image: url(/images/companies-logo-1.png);
+}
+.main .companies-section .companies-section-wrapper .company-2 {
+  background-image: url(/images/companies-logo-2.png);
+}
+.main .companies-section .companies-section-wrapper .company-3 {
+  background-image: url(/images/companies-logo-3.png);
+}
+.main .companies-section .companies-section-wrapper .company-4 {
+  background-image: url(/images/companies-logo-4.png);
+}
+.main .companies-section .companies-section-wrapper .company-5 {
+  background-image: url(/images/companies-logo-5.png);
+}
+.main .companies-section .companies-section-wrapper .company-6 {
+  background-image: url(/images/companies-logo-6.png);
+}
