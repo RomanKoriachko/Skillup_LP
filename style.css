@@ -617,3 +617,33 @@ body {
   background-color: #FA7A63;
   border-color: #FA7A63;
 }
+.main .count-section {
+  padding: 60px 0px;
+  background-color: #1F1E28;
+}
+.main .count-section .count-section-wrapper {
+  justify-content: space-around;
+}
+.main .count-section .count-section-wrapper .count-section-item > p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  color: #4EBD09;
+}
+.main .count-section .count-section-wrapper .count-section-item > div {
+  width: 40px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.main .count-section .count-section-wrapper .count-section-item > p:nth-child(3) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main .count-section .count-section-wrapper .count-section-item:last-child {
+  width: 240px;
+}

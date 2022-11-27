@@ -466,4 +466,30 @@ body {
             }
         }
     }
+    .count-section {
+        padding: 60px 0px;
+        background-color: #1F1E28;
+        .count-section-wrapper {
+            justify-content: space-around;
+            .count-section-item {
+                >p:nth-child(1) {
+                    @include fonts.h1();
+                    color: #4EBD09;
+                }
+                >div{
+                    width: 40px;
+                    height: 1px;
+                    background-color: #ffffff;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                >p:nth-child(3) {
+                    @include fonts.t3();
+                }
+            }
+            .count-section-item:last-child {
+                width: 240px;
+            }
+        }
+    }
 }
