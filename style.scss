@@ -396,4 +396,16 @@ body {
             }
         }
     }
+    .slider-section {
+        text-align: center;
+        height: 825px;
+        >p{
+            @include fonts.h2();
+            margin-bottom: 40px;
+        }
+        .big-container {
+            margin: 0 auto;
+            max-width: 1440px;
+        }
+    }
 }

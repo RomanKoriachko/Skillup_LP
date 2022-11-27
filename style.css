@@ -523,3 +523,18 @@ body {
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-line {
   border-bottom: 1px solid #4D4D4D;
 }
+.main .slider-section {
+  text-align: center;
+  height: 825px;
+}
+.main .slider-section > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 40px;
+}
+.main .slider-section .big-container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
