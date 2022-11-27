@@ -437,3 +437,70 @@ body {
   background-color: #FA7A63;
   border-color: #FA7A63;
 }
+.main .benefits-section {
+  min-height: 644px;
+  padding: 100px 0px;
+}
+.main .benefits-section .big-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-image: url(/images/benefits-section-bg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.main .benefits-section .big-container .benefits-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 10;
+}
+.main .benefits-section .big-container .benefits-section-content > p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  width: 330px;
+  justify-self: center;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu {
+  width: 600px;
+  justify-self: end;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item {
+  align-items: center;
+  justify-content: space-between;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) {
+  align-items: center;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) > img {
+  margin-right: 20px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item button {
+  height: 6px;
+  width: 12px;
+  border: none;
+  background-color: transparent;
+  background-image: url(/images/benefits-section-arrow-down-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-subitem {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  margin-top: 14px;
+  margin-left: 44px;
+  margin-right: 40px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item-line {
+  border-bottom: 1px solid #4D4D4D;
+  margin: 24px 0px;
+}
