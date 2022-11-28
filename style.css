@@ -1,0 +1,834 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background: #17161F;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.header {
+  height: 110px;
+  width: 100%;
+  background: #17161F;
+  color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+.header .header-items {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-top: 24px;
+}
+.header .header-menu {
+  gap: 0px 40px;
+}
+.header .header-menu li {
+  list-style: none;
+}
+.header .header-menu li .header-menu-item.active {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+.header .header-menu li .header-menu-item {
+  color: #989898;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header .header-button {
+  width: 184px;
+  height: 48px;
+  background-color: transparent;
+  color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  padding: 12px 48px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.header .header-button:hover {
+  color: #ffffff;
+  background-color: #FA2702;
+}
+.header .header-button:active {
+  color: #ffffff;
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
+
+.main .review-section {
+  background-color: #1F1E28;
+  height: 690px;
+  padding: 80px 0px;
+  margin-top: 110px;
+}
+.main .review-section .review-section-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+.main .review-section .review-section-content {
+  justify-content: space-between;
+  align-items: center;
+  gap: 85px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text::before {
+  content: "•";
+  margin-right: 25px;
+  margin-left: -38px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text {
+  margin-left: 38px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+.main .review-section .review-section-content .review-section-content-list .review-section-content-text:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  margin-bottom: 60px;
+}
+.main .review-section .review-section-content .review-section-content-details {
+  justify-content: space-between;
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 103px;
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .review-section-content-details-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #4EBD09;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-date {
+  background-image: url(/images/item-date-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-time {
+  background-image: url(/images/item-time-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-place {
+  background-image: url(/images/item-place-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper .item-cost {
+  background-image: url(/images/item-cost-img.png);
+}
+.main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main .review-section .review-section-content .review-section-content-btn {
+  margin-top: 75px;
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.3s all;
+}
+.main .review-section .review-section-content .review-section-content-btn:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .review-section .review-section-content .review-section-content-btn:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
+.main .about-section {
+  height: 570px;
+  padding: 100px 0px;
+}
+.main .about-section .about-section-wrapper {
+  align-items: center;
+  gap: 100px;
+}
+.main .about-section .about-section-wrapper .about-section-content p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+.main .about-section .about-section-wrapper .about-section-content p:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+}
+.main .suitable-section {
+  background-color: #1F1E28;
+  height: 590px;
+  padding: 50px 0px;
+}
+.main .suitable-section .suitable-section-content {
+  text-align: center;
+}
+.main .suitable-section .suitable-section-content .suitable-btn {
+  margin-top: 50px;
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.3s all;
+}
+.main .suitable-section .suitable-section-content .suitable-btn:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .suitable-section .suitable-section-content .suitable-btn:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
+.main .suitable-section .suitable-section-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main .suitable-section .suitable-wrapper {
+  display: grid;
+  grid-template-areas: "a a b b c c" ". d d e e .";
+  gap: 20px;
+}
+.main .suitable-section .suitable-wrapper .suitable-item {
+  width: 388px;
+  height: 140px;
+  background-color: #333142;
+  padding: 20px;
+  box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+  border-radius: 12px;
+}
+.main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header {
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4EBD09;
+}
+.main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  text-align: left;
+  margin-left: 20px;
+}
+.main .suitable-section .suitable-wrapper .suitable-item-1 {
+  grid-area: a;
+}
+.main .suitable-section .suitable-wrapper .suitable-item-2 {
+  grid-area: b;
+}
+.main .suitable-section .suitable-wrapper .suitable-item-3 {
+  grid-area: c;
+}
+.main .suitable-section .suitable-wrapper .suitable-item-4 {
+  grid-area: d;
+}
+.main .suitable-section .suitable-wrapper .suitable-item-5 {
+  grid-area: e;
+}
+.main .aspect-section {
+  height: 570px;
+  padding: 100px 0px;
+}
+.main .aspect-section .aspect-section-content {
+  justify-content: center;
+  align-items: center;
+  gap: 220px;
+}
+.main .aspect-section .aspect-section-content .aspect-section-content-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  margin-bottom: 20px;
+}
+.main .aspect-section .aspect-section-content > div:first-child {
+  width: 440px;
+}
+.main .aspect-section .aspect-section-content .aspect-section-list-item {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.main .aspect-section .aspect-section-content .aspect-section-list-item > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main .plan-section {
+  height: 440px;
+  padding: 50px 0px;
+  background-color: #1F1E28;
+  text-align: center;
+}
+.main .plan-section .plan-section-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 50px;
+}
+.main .plan-section .plan-section-wrapper .plan-section-item {
+  width: 400px;
+  height: 148px;
+  box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+  border-radius: 12px;
+  padding: 0px 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .plan-section .plan-section-wrapper .plan-section-item > p {
+  text-align: left;
+}
+.main .plan-section .plan-section-wrapper .plan-section-item > p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 145%;
+  color: #4EBD09;
+}
+.main .plan-section .plan-section-wrapper .plan-section-item > p:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+}
+.main .plan-section .plan-section-wrapper .plan-section-item-1 {
+  background-image: url(/images/plan-item1-img.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 100% 100%;
+}
+.main .plan-section .plan-section-wrapper .plan-section-item-2 {
+  background-image: url(/images/plan-item2-img.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 100% 100%;
+}
+.main .plan-section .plan-section-wrapper .plan-section-item-3 {
+  background-image: url(/images/plan-item3-img.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 100% 100%;
+  padding: 0px 75px;
+}
+.main .plan-section .plan-section-btn {
+  margin-top: 50px;
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.3s all;
+}
+.main .plan-section .plan-section-btn:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .plan-section .plan-section-btn:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
+.main .benefits-section {
+  min-height: 644px;
+  padding: 100px 0px;
+}
+.main .benefits-section .big-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-image: url(/images/benefits-section-bg.png);
+  background-position-x: left;
+  background-position-y: 150px;
+  background-repeat: no-repeat;
+}
+.main .benefits-section .big-container .benefits-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .benefits-section .big-container .benefits-section-content > p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  width: 330px;
+  justify-self: center;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu {
+  width: 600px;
+  justify-self: end;
+  margin-top: -20px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper {
+  padding: 24px 0px;
+  background-color: #17161F;
+  cursor: pointer;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item {
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) {
+  align-items: center;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) > img {
+  margin-right: 20px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .benefits-section-item-btn {
+  height: 6px;
+  width: 12px;
+  border: none;
+  background-color: transparent;
+  background-image: url(/images/benefits-section-arrow-down-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.3s all;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .active-btn {
+  background-image: url(/images/benefits-section-arrow-up-img.png);
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-subitem {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  margin-top: -45px;
+  margin-left: 44px;
+  margin-right: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+  z-index: -1;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .active {
+  opacity: 1;
+  visibility: visible;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-line {
+  border-bottom: 1px solid #4D4D4D;
+}
+.main .slider-section {
+  text-align: center;
+  height: 825px;
+}
+.main .slider-section > p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 40px;
+}
+.main .slider-section .big-container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.main .slider-section .big-container .slider .slide-1 {
+  background-image: url(/images/video-pic.png);
+  height: 742px;
+}
+.main .slider-section .big-container .slider .slide-2 {
+  background-image: url(/images/video-pic.png);
+  height: 742px;
+}
+.main .slider-section .big-container .slider .slide-3 {
+  background-image: url(/images/video-pic.png);
+  height: 742px;
+}
+.main .slider-section .big-container .slider .slick-prev:before, .main .slider-section .big-container .slider .slick-next:before {
+  content: "";
+}
+.main .slider-section .big-container .slider .slick-prev, .main .slider-section .big-container .slider .slick-next {
+  width: 20px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .slider-section .big-container .slider .slick-prev {
+  left: 125px;
+  background-image: url(/images/arrow-left.png);
+  z-index: 10;
+}
+.main .slider-section .big-container .slider .slick-next {
+  right: 125px;
+  background-image: url(/images/arrow-right.png);
+  z-index: 10;
+}
+.main .career-section {
+  padding: 100px 0px;
+}
+.main .career-section .career-section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.main .career-section .career-section-wrapper .career-section-text {
+  width: 380px;
+}
+.main .career-section .career-section-wrapper .career-section-text p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+}
+.main .career-section .career-section-wrapper .career-section-text p:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.main .career-section .career-section-wrapper .career-section-text button {
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.3s all;
+}
+.main .career-section .career-section-wrapper .career-section-text button:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .career-section .career-section-wrapper .career-section-text button:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
+.main .count-section {
+  padding: 60px 0px;
+  background-color: #1F1E28;
+}
+.main .count-section .count-section-wrapper {
+  justify-content: space-around;
+}
+.main .count-section .count-section-wrapper .count-section-item > p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  color: #4EBD09;
+}
+.main .count-section .count-section-wrapper .count-section-item > div {
+  width: 40px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.main .count-section .count-section-wrapper .count-section-item > p:nth-child(3) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main .count-section .count-section-wrapper .count-section-item:last-child {
+  width: 240px;
+}
+.main .companies-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.main .companies-section .companies-section-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 50px;
+}
+.main .companies-section .companies-section-wrapper {
+  justify-content: space-between;
+}
+.main .companies-section .companies-section-wrapper .companies-section-item {
+  width: 184px;
+  height: 184px;
+  border: 4px solid #333142;
+  border-radius: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .companies-section .companies-section-wrapper .company-1 {
+  background-image: url(/images/companies-logo-1.png);
+}
+.main .companies-section .companies-section-wrapper .company-2 {
+  background-image: url(/images/companies-logo-2.png);
+}
+.main .companies-section .companies-section-wrapper .company-3 {
+  background-image: url(/images/companies-logo-3.png);
+}
+.main .companies-section .companies-section-wrapper .company-4 {
+  background-image: url(/images/companies-logo-4.png);
+}
+.main .companies-section .companies-section-wrapper .company-5 {
+  background-image: url(/images/companies-logo-5.png);
+}
+.main .companies-section .companies-section-wrapper .company-6 {
+  background-image: url(/images/companies-logo-6.png);
+}
+.main .form-section {
+  padding: 100px 0px;
+  background-color: #1F1E28;
+}
+.main .form-section .form-section-wrapper {
+  justify-content: space-evenly;
+}
+.main .form-section .form-section-wrapper .form-section-text {
+  width: 450px;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  margin-bottom: 20px;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(2) {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main .form-section .form-section-wrapper .form-wrapper {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.main .form-section .form-section-wrapper .form-wrapper .form-input {
+  width: 490px;
+  height: 48px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4D4D4D;
+  padding: 0px 20px;
+}
+.main .form-section .form-section-wrapper .form-wrapper .form-input::-moz-placeholder {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4D4D4D;
+}
+.main .form-section .form-section-wrapper .form-wrapper .form-input:-ms-input-placeholder {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4D4D4D;
+}
+.main .form-section .form-section-wrapper .form-wrapper .form-input::placeholder {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4D4D4D;
+}
+.main .form-section .form-section-wrapper .form-wrapper button {
+  width: 184px;
+  height: 48px;
+  color: white;
+  background-color: #FA2702;
+  border: 1px solid #FA2702;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  transition: 0.3s all;
+  width: 490px;
+}
+.main .form-section .form-section-wrapper .form-wrapper button:hover {
+  background-color: #A61A01;
+  border-color: #A61A01;
+}
+.main .form-section .form-section-wrapper .form-wrapper button:active {
+  background-color: #FA7A63;
+  border-color: #FA7A63;
+}
+
+.footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: 300px 900px;
+  gap: 120px;
+}
+.footer .footer-wrapper .contacts-block {
+  padding: 41px 0px;
+}
+.footer .footer-wrapper .contacts-block .contacts-header {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 50px;
+}
+.footer .footer-wrapper .contacts-block .contacts-t1 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+.footer .footer-wrapper .contacts-block .contacts-t2 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 40px;
+}
+.footer .footer-wrapper .contacts-block .social-media-links {
+  justify-content: space-between;
+}
+.footer .footer-wrapper .contacts-block .social-media-links button {
+  width: 37px;
+  height: 37px;
+  background: transparent;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(1) {
+  background-image: url(/images/icon-instagram.png);
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(2) {
+  background-image: url(/images/icon-youtube.png);
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(3) {
+  background-image: url(/images/icon-linkedin.png);
+}
+.footer .footer-wrapper .contacts-block .social-media-links button:nth-child(4) {
+  background-image: url(/images/icon-facebook.png);
+}
