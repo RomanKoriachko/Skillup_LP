@@ -174,7 +174,6 @@ body {
         }
     }
     .about-section {
-        height: 570px;
         padding: 100px 0px;
         .about-section-wrapper {
             align-items: center;
@@ -187,13 +186,11 @@ body {
                 p:nth-child(2) {
                     @include fonts.t6();
                 }
-                
             }
         }
     }
     .suitable-section {
         background-color: #1F1E28;
-        height: 590px;
         padding: 50px 0px;
         .suitable-section-content {
             text-align: center;
@@ -254,7 +251,6 @@ body {
         }
     }
     .aspect-section {
-        height: 570px;
         padding: 100px 0px;
         .aspect-section-content {
             justify-content: center;
@@ -278,7 +274,6 @@ body {
         }
     }
     .plan-section {
-        height: 440px;
         padding: 50px 0px;
         background-color: #1F1E28;
         text-align: center;
@@ -726,6 +721,17 @@ body {
                 }
             }
         }
+        .about-section {
+            text-align: center;
+            padding: 50px 0px;
+            .about-section-wrapper {
+                display: block;
+                .about-section-content {
+                    text-align: left;
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }
 
@@ -811,6 +817,19 @@ body {
                 }
                 .review-section-content-img{
                     display: none;
+                }
+            }
+        }
+        .about-section {
+            .about-section-wrapper {
+                >img{
+                    width: 246px;
+                }
+                .about-section-content {
+                    p:nth-child(1) {
+                        @include fonts.mobile1();
+                        margin-bottom: 16px;
+                    }
                 }
             }
         }

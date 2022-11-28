@@ -234,7 +234,6 @@ body {
   background-image: url(/images/review-section-img.png);
 }
 .main .about-section {
-  height: 570px;
   padding: 100px 0px;
 }
 .main .about-section .about-section-wrapper {
@@ -256,7 +255,6 @@ body {
 }
 .main .suitable-section {
   background-color: #1F1E28;
-  height: 590px;
   padding: 50px 0px;
 }
 .main .suitable-section .suitable-section-content {
@@ -342,7 +340,6 @@ body {
   grid-area: e;
 }
 .main .aspect-section {
-  height: 570px;
   padding: 100px 0px;
 }
 .main .aspect-section .aspect-section-content {
@@ -372,7 +369,6 @@ body {
   line-height: 19px;
 }
 .main .plan-section {
-  height: 440px;
   padding: 50px 0px;
   background-color: #1F1E28;
   text-align: center;
@@ -928,6 +924,17 @@ body {
     margin-right: -15px;
     width: 100%;
   }
+  .main .about-section {
+    text-align: center;
+    padding: 50px 0px;
+  }
+  .main .about-section .about-section-wrapper {
+    display: block;
+  }
+  .main .about-section .about-section-wrapper .about-section-content {
+    text-align: left;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 576px) {
   .header {
@@ -1015,5 +1022,15 @@ body {
   }
   .main .review-section .review-section-content .review-section-content-img {
     display: none;
+  }
+  .main .about-section .about-section-wrapper > img {
+    width: 246px;
+  }
+  .main .about-section .about-section-wrapper .about-section-content p:nth-child(1) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
   }
 }
