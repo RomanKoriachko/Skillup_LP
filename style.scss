@@ -30,8 +30,9 @@ body {
     color: #ffffff;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .row {
     display: flex;
@@ -48,7 +49,7 @@ body {
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        padding-top: 24px;
+        padding: 12px 0px;
     }
     .header-menu {
         gap: 0px 40px;
@@ -96,7 +97,6 @@ body {
 .main {
     .review-section {
         background-color: #1F1E28;
-        height: 690px;
         padding: 80px 0px;
         margin-top: 110px;
         .review-section-header {
@@ -126,7 +126,9 @@ body {
                     }
                 }
                 .review-section-content-details {
-                    justify-content: space-between;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-items: center;
                     .review-section-content-details-wrapper {
                         flex-direction: column;
                         align-items: center;
@@ -618,6 +620,76 @@ body {
                 button:nth-child(4) {
                     background-image: url(/images/icon-facebook.png);
                 }
+            }
+        }
+    }
+}
+
+// Laptop
+@media(max-width: 1200px) {
+    .main {
+        .review-section {
+            .review-section-header {
+                @include fonts.h5();
+            }
+            .review-section-content {
+                gap: 60px;
+                >img{
+                    max-width: 400px;
+                }
+                .review-section-content-list{
+                    .review-section-content-text:nth-child(1) {
+                        @include fonts.h4();
+                        margin-bottom: 20px;
+                        margin-top: 30px;
+                    }
+                    .review-section-content-text:nth-child(2) {
+                        @include fonts.h4();
+                        margin-bottom: 60px;
+                    }
+                }
+                .review-section-content-btn {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+// Tablet
+@media(max-width: 768px) {
+    .header {
+        height: 60px;
+        .header-items {
+            padding: 5px 0px;
+            >a{
+                >img{
+                    height: 40px;
+                }
+                
+            }
+            .header-menu {
+                display: none;
+            }
+            .header-button {
+                display: none;
+            }
+        }
+    }
+}
+
+// Mobile
+@media(max-width: 425px) {
+    .header {
+        height: 40px;
+        .header-items {
+            padding: 5px 0px;
+            >a{
+                margin-left: -5px;
+                >img{
+                    height: 30px;
+                }
+                
             }
         }
     }
