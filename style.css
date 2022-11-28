@@ -60,8 +60,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .row {
@@ -81,7 +82,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding-top: 24px;
+  padding: 12px 0px;
 }
 .header .header-menu {
   gap: 0px 40px;
@@ -127,7 +128,6 @@ body {
 
 .main .review-section {
   background-color: #1F1E28;
-  height: 690px;
   padding: 80px 0px;
   margin-top: 110px;
 }
@@ -166,7 +166,9 @@ body {
   margin-bottom: 60px;
 }
 .main .review-section .review-section-content .review-section-content-details {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 .main .review-section .review-section-content .review-section-content-details .review-section-content-details-wrapper {
   flex-direction: column;
@@ -834,4 +836,68 @@ body {
 }
 .footer .footer-wrapper > div:nth-child(2) {
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .main .review-section .review-section-header {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main .review-section .review-section-content {
+    gap: 60px;
+  }
+  .main .review-section .review-section-content > img {
+    max-width: 400px;
+  }
+  .main .review-section .review-section-content .review-section-content-list .review-section-content-text:nth-child(1) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .main .review-section .review-section-content .review-section-content-list .review-section-content-text:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 60px;
+  }
+  .main .review-section .review-section-content .review-section-content-btn {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+  .header .header-items {
+    padding: 5px 0px;
+  }
+  .header .header-items > a > img {
+    height: 40px;
+  }
+  .header .header-items .header-menu {
+    display: none;
+  }
+  .header .header-items .header-button {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    height: 40px;
+  }
+  .header .header-items {
+    padding: 5px 0px;
+  }
+  .header .header-items > a {
+    margin-left: -5px;
+  }
+  .header .header-items > a > img {
+    height: 30px;
+  }
 }
