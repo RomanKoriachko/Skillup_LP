@@ -105,7 +105,9 @@ body {
         .review-section-content {
             justify-content: space-between;
             align-items: center;
-            gap: 85px;
+            gap: 80px;
+            .review-section-content-wrapper{
+                max-width: 570px;
                 .review-section-content-list {
                     .review-section-content-text::before {
                         content: "\2022";
@@ -163,6 +165,12 @@ body {
                     margin-top: 75px;
                     @include mainButton();
                 }
+            }
+            .review-section-content-img {
+                width: 549px;
+                height: 454px;
+                background-image: url(/images/review-section-img.png);
+            }
         }
     }
     .about-section {
@@ -639,22 +647,24 @@ body {
             }
             .review-section-content {
                 gap: 60px;
-                >img{
-                    max-width: 400px;
-                }
-                .review-section-content-list{
-                    .review-section-content-text:nth-child(1) {
-                        @include fonts.h4();
-                        margin-bottom: 20px;
-                        margin-top: 30px;
+                .review-section-content-wrapper{
+                    .review-section-content-list{
+                        .review-section-content-text:nth-child(1) {
+                            @include fonts.h4();
+                            margin-bottom: 20px;
+                            margin-top: 30px;
+                        }
+                        .review-section-content-text:nth-child(2) {
+                            @include fonts.h4();
+                            margin-bottom: 60px;
+                        }
                     }
-                    .review-section-content-text:nth-child(2) {
-                        @include fonts.h4();
-                        margin-bottom: 60px;
+                    .review-section-content-btn {
+                        margin-top: 50px;
                     }
                 }
-                .review-section-content-btn {
-                    margin-top: 50px;
+                .review-section-content-img {
+                    margin-right: -15px;
                 }
             }
         }
@@ -662,11 +672,13 @@ body {
 }
 
 // Tablet
-@media(max-width: 768px) {
+@media(max-width: 992px) {
     .header {
         height: 60px;
         .header-items {
             padding: 5px 0px;
+            display: block;
+            width: auto;
             >a{
                 >img{
                     height: 40px;
@@ -681,10 +693,44 @@ body {
             }
         }
     }
+    .main {
+        .review-section {
+            margin-top: 60px;
+            position: relative;
+            padding: 40px 0px;
+            .review-section-content {
+                gap: 0px;
+                .review-section-content-wrapper {
+                    max-width: 620px;
+                    text-align: center;
+                    .review-section-content-list {
+                        text-align: left;
+                    }
+                    .review-section-content-details {
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        justify-items: center;
+                        gap: 10px;
+                    }
+                    .review-section-content-btn {
+                        width: 300px;
+                    }
+                }
+                .review-section-content-img{
+                    background-image: url(/images/review-section-tablet-img.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-right: -15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 // Mobile
-@media(max-width: 425px) {
+@media(max-width: 576px) {
     .header {
         height: 40px;
         .header-items {
@@ -695,6 +741,77 @@ body {
                     height: 30px;
                 }
                 
+            }
+        }
+    }
+    .main{
+        .review-section {
+            margin-top: 40px;
+            .mobile-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                margin-left: 9px;
+                .review-section-header {
+                    @include fonts.t6();
+                }
+                .review-section-content-mobile-img {
+                    background-image: url(/images/review-section-tablet-img.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-right: -15px;
+                    height: 207px;
+                }
+            }
+            .review-section-content {
+                gap: 0px;
+                .review-section-content-wrapper {
+                    .review-section-content-list{
+                        margin-left: -8px;
+                        .review-section-content-text::before {
+                            margin-right: 15px;
+                            margin-left: -20px;
+                        }
+                        .review-section-content-text:nth-child(1) {
+                            @include fonts.h5();
+                            margin-bottom: 20px;
+                            margin-top: 30px;
+                        }
+                        .review-section-content-text:nth-child(2) {
+                            @include fonts.h6();
+                            margin-bottom: 24px;
+                        }
+                    }
+                    .review-section-content-btn {
+                        width: 100%;
+                    }
+                    .review-section-content-details {
+                        padding: 0px 30px;
+                        .review-section-content-details-wrapper {
+                            .review-section-content-details-item {
+                                width: 32px;
+                                height: 32px;
+                                background-position: center;
+                            }
+                            .item-date {
+                                background-size: 55%;
+                            }
+                            .item-time {
+                                background-size: 70%;
+                            }
+                            .item-place {
+                                background-size: 60%;
+                            }
+                            .item-cost {
+                                background-size: 70%;
+                            }
+                        }
+                    }
+                }
+                .review-section-content-img{
+                    display: none;
+                }
             }
         }
     }
