@@ -966,6 +966,15 @@ body {
                 gap: 32px;
             }
         }
+        .count-section {
+            .count-section-wrapper {
+                flex-direction: column;
+                align-items: center;
+                .count-section-item {
+                    width: 240px;
+                }
+            }
+        }
     }
 }
 
@@ -1270,6 +1279,31 @@ body {
                     button {
                         width: 100%;
                     }
+                }
+            }
+        }
+        .count-section {
+            padding: 32px 0px;
+            .count-section-wrapper {
+                .count-section-item {
+                    width: 170px;
+                    margin-bottom: 32px;
+                    >p:nth-child(1){
+                        font-weight: 400;
+                        font-size: 46px;
+                        line-height: 55px;
+                    }
+                    >div{
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        width: 60px;
+                    }
+                    >p:nth-child(3){
+                        @include fonts.mobileT5();
+                    }
+                }
+                .count-section-item:last-child {
+                    width: 170px;
                 }
             }
         }
