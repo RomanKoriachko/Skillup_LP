@@ -576,12 +576,12 @@ body {
   justify-self: center;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu {
-  width: 600px;
+  max-width: 600px;
   justify-self: end;
   margin-top: -20px;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper {
-  padding: 24px 0px;
+  margin: 24px 0px;
   background-color: #17161F;
   cursor: pointer;
 }
@@ -621,6 +621,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 145%;
+  height: 45px;
   margin-top: -45px;
   margin-left: 44px;
   margin-right: 40px;
@@ -634,6 +635,7 @@ body {
   visibility: visible;
   margin-top: -10px;
   margin-bottom: 20px;
+  height: auto;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-line {
   border-bottom: 1px solid #4D4D4D;
@@ -1144,6 +1146,21 @@ body {
     font-size: 14px;
     line-height: 145%;
   }
+  .main .benefits-section .big-container {
+    background-image: none;
+  }
+  .main .benefits-section .big-container .benefits-section-content {
+    grid-template-columns: 1fr;
+  }
+  .main .benefits-section .big-container .benefits-section-content > p:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .main .benefits-section .big-container .benefits-section-content .benefits-section-menu {
+    justify-self: center;
+    margin-top: 0;
+  }
 }
 @media (max-width: 715px) {
   .main .plan-section .plan-section-wrapper {
@@ -1377,6 +1394,38 @@ body {
   .main .plan-section .plan-section-btn {
     margin-top: 30px;
     width: 100%;
+  }
+  .main .benefits-section {
+    padding: 48px 0px;
+  }
+  .main .benefits-section .big-container .benefits-section-content > p:nth-child(1) {
+    text-align: left;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) > img {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+  }
+  .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item > div:nth-child(1) > p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 145%;
+  }
+  .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-subitem {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    margin-left: 33px;
+    height: 45px;
+  }
+  .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-subitem.active {
+    height: auto;
   }
 }
 @media (max-width: 450px) {
