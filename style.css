@@ -888,6 +888,9 @@ body {
   .main .review-section .review-section-content .review-section-content-img {
     margin-right: -15px;
   }
+  .main .aspect-section .aspect-section-content {
+    gap: 150px;
+  }
 }
 @media (max-width: 992px) {
   .header {
@@ -1012,6 +1015,13 @@ body {
   .main .suitable-section .suitable-section-content .suitable-btn:active {
     background-color: #FA7A63;
     border-color: #FA7A63;
+  }
+  .main .aspect-section {
+    padding: 50px 0px;
+  }
+  .main .aspect-section .aspect-section-content {
+    flex-direction: column-reverse;
+    gap: 50px;
   }
 }
 @media (max-width: 576px) {
@@ -1185,6 +1195,28 @@ body {
   }
   .main .suitable-section .suitable-section-content .suitable-btn {
     width: 100%;
+  }
+  .main .aspect-section .aspect-section-content {
+    gap: 32px;
+  }
+  .main .aspect-section .aspect-section-content > img {
+    width: 213px;
+  }
+  .main .aspect-section .aspect-section-content > div:first-child {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .main .aspect-section .aspect-section-content .aspect-section-content-header {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .main .aspect-section .aspect-section-content .aspect-section-list-item {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
   }
 }
 @media (max-width: 450px) {

@@ -684,6 +684,11 @@ body {
                 }
             }
         }
+        .aspect-section {
+            .aspect-section-content{
+                gap: 150px;
+            }
+        }
     }
 }
 
@@ -791,6 +796,13 @@ body {
                     margin-top: 30px;
                     @include mainButton();
                 }
+            }
+        }
+        .aspect-section {
+            padding: 50px 0px;
+            .aspect-section-content{
+                flex-direction: column-reverse;
+                gap: 50px;
             }
         }
     }
@@ -956,6 +968,24 @@ body {
             .suitable-section-content {
                 .suitable-btn {
                     width: 100%;
+                }
+            }
+        }
+        .aspect-section{
+            .aspect-section-content {
+                gap: 32px;
+                >img{
+                    width: 213px;
+                }
+                >div:first-child{
+                    align-self: flex-start;
+                    width: 100%
+                }
+                .aspect-section-content-header {
+                    @include fonts.mobileH2();
+                }
+                .aspect-section-list-item {
+                    @include fonts.mobileT6();
                 }
             }
         }
