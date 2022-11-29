@@ -634,6 +634,36 @@ body {
                 background-image: url(/images/companies-logo-6.png);
             }
         }
+        // .companies-slider {
+        //     display: none;
+        //     .companies-section-item {
+        //         width: 104px;
+        //         height: 104px;
+        //         border: 4px solid #333142;
+        //         border-radius: 12px;
+        //         background-position: center;
+        //         background-repeat: no-repeat;
+        //         background-size: 85%;
+        //     }
+        //     .company-1 {
+        //         background-image: url(/images/companies-logo-1.png);
+        //     }
+        //     .company-2 {
+        //         background-image: url(/images/companies-logo-2.png);
+        //     }
+        //     .company-3 {
+        //         background-image: url(/images/companies-logo-3.png);
+        //     }
+        //     .company-4 {
+        //         background-image: url(/images/companies-logo-4.png);
+        //     }
+        //     .company-5 {
+        //         background-image: url(/images/companies-logo-5.png);
+        //     }
+        //     .company-6 {
+        //         background-image: url(/images/companies-logo-6.png);
+        //     }
+        // }
     }
     .form-section {
         padding: 100px 0px;
@@ -788,6 +818,14 @@ body {
                     height: 200px;
                     padding: 0px 30px;
                 }
+            }
+        }
+        .companies-section {
+            .companies-section-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 184px);
+                justify-content: center;
+                gap: 10px;
             }
         }
     }
@@ -972,6 +1010,15 @@ body {
                 align-items: center;
                 .count-section-item {
                     width: 240px;
+                }
+            }
+        }
+        .companies-section {
+            .companies-section-wrapper {
+                grid-template-columns: repeat(3, 150px);
+                .companies-section-item {
+                    width: 150px;
+                    height: 150px;
                 }
             }
         }
@@ -1307,10 +1354,44 @@ body {
                 }
             }
         }
+        .companies-section {
+            padding: 48px 0px;
+            margin-top: 0;
+            margin-bottom: 0;
+            .companies-section-header {
+                text-align: left;
+                @include fonts.mobileH2();
+                margin-bottom: 16px;
+            }
+            .companies-section-wrapper {
+                grid-template-columns: repeat(3, 104px);
+                gap: 8px;
+                .companies-section-item {
+                    width: 104px;
+                    height: 104px;
+                    background-size: 90%;
+                }
+            }
+            // .companies-slider {
+            //     display: grid;
+            //     .companies-section-items-block {
+            //         margin-left: -48px;
+            //     }
+            //     .company-1, .company-3, .company-5 {
+            //         margin-bottom: 8px;
+            //     }
+            //     .company-2, .company-4, .company-6 {
+            //         margin-left: 50px;
+            //     }
+            //     .companies-section-item {
+            //         margin-right: 8px;
+            //     }
+            // }
+        }
     }
 }
 
-// Small Modile
+// L Modile
 @media(max-width: 450px) {
     .main{
         .suitable-section {
@@ -1390,6 +1471,21 @@ body {
                 }
                 .slick-track {
                     transform: translate3d(-30px, 0px, 0px);
+                }
+            }
+        }
+    }
+}
+
+// S Mobile
+@media(max-width: 340px) {
+    .main{
+        .companies-section {
+            .companies-section-wrapper {
+                grid-template-columns: repeat(3, 80px);
+                .companies-section-item {
+                    width: 80px;
+                    height: 80px;
                 }
             }
         }
