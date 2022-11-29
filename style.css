@@ -1166,9 +1166,6 @@ body {
     justify-self: center;
     margin-top: 0;
   }
-  .main .slider-section {
-    max-height: 600px;
-  }
   .main .slider-section .big-container .slider .slide-1 {
     height: 600px;
   }
@@ -1183,6 +1180,14 @@ body {
   }
   .main .slider-section .big-container .slider .slick-next {
     right: 60px;
+  }
+  .main .career-section {
+    padding: 60px 0px;
+  }
+  .main .career-section .career-section-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 32px;
   }
 }
 @media (max-width: 715px) {
@@ -1472,6 +1477,30 @@ body {
   }
   .main .slider-section .big-container .slider .slick-next {
     right: 16px;
+  }
+  .main .career-section {
+    padding: 48px 0px;
+  }
+  .main .career-section .career-section-wrapper > img {
+    width: 235px;
+  }
+  .main .career-section .career-section-wrapper .career-section-text {
+    width: 100%;
+  }
+  .main .career-section .career-section-wrapper .career-section-text > p:nth-child(1) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .main .career-section .career-section-wrapper .career-section-text > p:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+  }
+  .main .career-section .career-section-wrapper .career-section-text button {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
