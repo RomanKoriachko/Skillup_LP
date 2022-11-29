@@ -339,6 +339,12 @@ body {
 .main .suitable-section .suitable-wrapper .suitable-item-5 {
   grid-area: e;
 }
+.main .suitable-section .suitable-slider {
+  display: none;
+}
+.main .suitable-section .suitable-slider-mobile {
+  display: none;
+}
 .main .aspect-section {
   padding: 100px 0px;
 }
@@ -943,9 +949,49 @@ body {
   .main .about-section .about-section-wrapper .about-section-content {
     text-align: left;
     margin-top: 20px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+  }
+  .main .suitable-section .suitable-section-header {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .main .suitable-section .suitable-wrapper {
+    grid-template-areas: "a a b b" "c c d d" ". e e .";
+    gap: 10px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item {
+    width: 265px;
+    height: 120px;
+    padding: 8px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header {
+    gap: 9px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > img {
+    width: 32px;
+    height: 32px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
   }
   .main .suitable-section .suitable-section-content .suitable-btn {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 184px;
     height: 48px;
     color: white;
@@ -966,38 +1012,6 @@ body {
   .main .suitable-section .suitable-section-content .suitable-btn:active {
     background-color: #FA7A63;
     border-color: #FA7A63;
-  }
-  .main .suitable-section .suitable-section-header {
-    font-family: "Exo 2", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .main .suitable-section .suitable-wrapper {
-    grid-template-areas: "a a b b" "c c d d" ". e e .";
-  }
-  .main .suitable-section .suitable-wrapper .suitable-item {
-    width: 265px;
-    height: 120px;
-    padding: 8px;
-  }
-  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > img {
-    width: 32px;
-    height: 32px;
-  }
-  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > p {
-    font-family: "Exo 2", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
-    font-family: "Exo 2", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 145%;
   }
 }
 @media (max-width: 576px) {
@@ -1084,6 +1098,12 @@ body {
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-cost {
     background-size: 70%;
   }
+  .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper > p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
   .main .review-section .review-section-content .review-section-content-img {
     display: none;
   }
@@ -1096,5 +1116,131 @@ body {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 16px;
+  }
+  .main .suitable-section {
+    padding: 32px 0px;
+  }
+  .main .suitable-section .suitable-section-header {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .main .suitable-section .suitable-wrapper {
+    display: none;
+  }
+  .main .suitable-section .suitable-slider {
+    display: block;
+  }
+  .main .suitable-section .suitable-slider .suitable-item {
+    max-width: 350px;
+    height: 120px;
+    padding: 8px;
+    background-color: #333142;
+    box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+    border-radius: 12px;
+    margin-right: 8px;
+  }
+  .main .suitable-section .suitable-slider .suitable-item .suitable-item-header {
+    gap: 9px;
+    align-items: center;
+  }
+  .main .suitable-section .suitable-slider .suitable-item .suitable-item-header > img {
+    width: 32px;
+    height: 32px;
+  }
+  .main .suitable-section .suitable-slider .suitable-item .suitable-item-header > p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4EBD09;
+  }
+  .main .suitable-section .suitable-slider .suitable-item > div:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+  .main .suitable-section .suitable-slider .slick-dots {
+    bottom: -40px;
+  }
+  .main .suitable-section .suitable-slider .slick-dots li {
+    margin: 0px 0px;
+  }
+  .main .suitable-section .suitable-slider .slick-dots li.slick-active button:before {
+    color: #333142;
+  }
+  .main .suitable-section .suitable-slider .slick-dots li button:before {
+    color: #989898;
+    opacity: 1;
+  }
+  .main .suitable-section .suitable-slider .slick-track {
+    transform: translate3d(-30px, 0px, 0px);
+  }
+  .main .suitable-section .suitable-section-content .suitable-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .main .suitable-section .suitable-slider {
+    display: none;
+  }
+  .main .suitable-section .suitable-slider-mobile {
+    display: block;
+  }
+  .main .suitable-section .suitable-slider-mobile .suitable-item {
+    max-width: 265px;
+    height: 120px;
+    padding: 8px;
+    background-color: #333142;
+    box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+    border-radius: 12px;
+    margin-right: 8px;
+  }
+  .main .suitable-section .suitable-slider-mobile .suitable-item .suitable-item-header {
+    gap: 9px;
+    align-items: center;
+  }
+  .main .suitable-section .suitable-slider-mobile .suitable-item .suitable-item-header > img {
+    width: 32px;
+    height: 32px;
+  }
+  .main .suitable-section .suitable-slider-mobile .suitable-item .suitable-item-header > p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4EBD09;
+  }
+  .main .suitable-section .suitable-slider-mobile .suitable-item > div:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+  .main .suitable-section .suitable-slider-mobile .slick-dots {
+    bottom: -40px;
+  }
+  .main .suitable-section .suitable-slider-mobile .slick-dots li {
+    margin: 0px 0px;
+  }
+  .main .suitable-section .suitable-slider-mobile .slick-dots li.slick-active button:before {
+    color: #333142;
+  }
+  .main .suitable-section .suitable-slider-mobile .slick-dots li button:before {
+    color: #989898;
+    opacity: 1;
+  }
+  .main .suitable-section .suitable-slider-mobile .slick-track {
+    transform: translate3d(-30px, 0px, 0px);
   }
 }

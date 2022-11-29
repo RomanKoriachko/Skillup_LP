@@ -12,3 +12,22 @@ for (let i = 0; i < dropdownMenu.length; i++) {
 $(document).ready(function () {
   $(".slider").slick({});
 });
+
+$(document).ready(function () {
+  $(".suitable-slider").slick({
+    dots: true,
+    centerMode: true,
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+  });
+});
+
+$(document).ready(function () {
+  $(".suitable-slider-mobile").slick({
+    dots: true,
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+  });
+});
