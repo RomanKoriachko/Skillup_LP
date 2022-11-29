@@ -52,3 +52,12 @@ $(document).ready(function () {
     variableWidth: true,
   });
 });
+
+$(document).ready(function () {
+  $(".companies-slider").slick({
+    arrows: false,
+    infinite: false,
+    centerMode: true,
+    variableWidth: true,
+  });
+});
