@@ -37,6 +37,7 @@ body {
 .row {
     display: flex;
 }
+
 .header {
     height: 110px;
     width: 100%;
@@ -1031,6 +1032,17 @@ body {
             }
         }
     }
+    .footer {
+        .footer-wrapper {
+            .contacts-block {
+                .contacts-wrapper {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                }
+            }
+        }
+    }
 }
 
 // For plan section slider
@@ -1422,6 +1434,39 @@ body {
                         width: 100%;
                     }
                 } 
+            }
+        }
+    }
+    .footer {
+        .footer-wrapper {
+            .contacts-block {
+                padding: 48px 0px 32px 0px;
+                .contacts-header {
+                    text-align: left;
+                    @include fonts.mobileH1();
+                    margin-bottom: 26px;
+                }
+                .contacts-wrapper {
+                    align-items: flex-start;
+                    gap: 0px;
+                    .contacts-t1 {
+                        text-align: left;
+                        @include fonts.mobileT5();
+                        margin-bottom: 8px;
+                    }
+                    .contacts-t2 {
+                        text-align: left;
+                        @include fonts.mobileT7();
+                        margin-bottom: 16px;
+                    }
+                    .social-media-links {
+                        margin-top: 32px;
+                        button{
+                            width: 23px;
+                            height: 23px;
+                        }
+                    }
+                }
             }
         }
     }
