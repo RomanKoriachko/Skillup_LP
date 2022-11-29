@@ -10,7 +10,9 @@ for (let i = 0; i < dropdownMenu.length; i++) {
 }
 
 $(document).ready(function () {
-  $(".slider").slick({});
+  $(".slider").slick({
+    respondTo: "min",
+  });
 });
 
 $(document).ready(function () {

@@ -552,7 +552,6 @@ body {
   border-color: #FA7A63;
 }
 .main .benefits-section {
-  min-height: 644px;
   padding: 100px 0px;
 }
 .main .benefits-section .big-container {
@@ -642,7 +641,7 @@ body {
 }
 .main .slider-section {
   text-align: center;
-  height: 825px;
+  max-height: 825px;
 }
 .main .slider-section > p {
   font-family: "Exo 2", sans-serif;
@@ -657,14 +656,20 @@ body {
 }
 .main .slider-section .big-container .slider .slide-1 {
   background-image: url(/images/video-pic.png);
+  background-position: center;
+  background-size: cover;
   height: 742px;
 }
 .main .slider-section .big-container .slider .slide-2 {
   background-image: url(/images/video-pic.png);
+  background-position: center;
+  background-size: cover;
   height: 742px;
 }
 .main .slider-section .big-container .slider .slide-3 {
   background-image: url(/images/video-pic.png);
+  background-position: center;
+  background-size: cover;
   height: 742px;
 }
 .main .slider-section .big-container .slider .slick-prev:before, .main .slider-section .big-container .slider .slick-next:before {
@@ -1161,6 +1166,24 @@ body {
     justify-self: center;
     margin-top: 0;
   }
+  .main .slider-section {
+    max-height: 600px;
+  }
+  .main .slider-section .big-container .slider .slide-1 {
+    height: 600px;
+  }
+  .main .slider-section .big-container .slider .slide-2 {
+    height: 600px;
+  }
+  .main .slider-section .big-container .slider .slide-3 {
+    height: 600px;
+  }
+  .main .slider-section .big-container .slider .slick-prev {
+    left: 60px;
+  }
+  .main .slider-section .big-container .slider .slick-next {
+    right: 60px;
+  }
 }
 @media (max-width: 715px) {
   .main .plan-section .plan-section-wrapper {
@@ -1426,6 +1449,29 @@ body {
   }
   .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-subitem.active {
     height: auto;
+  }
+  .main .slider-section > p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    margin-left: 15px;
+  }
+  .main .slider-section .big-container .slider .slide-1 {
+    height: 186px;
+  }
+  .main .slider-section .big-container .slider .slide-2 {
+    height: 186px;
+  }
+  .main .slider-section .big-container .slider .slide-3 {
+    height: 186px;
+  }
+  .main .slider-section .big-container .slider .slick-prev {
+    left: 16px;
+  }
+  .main .slider-section .big-container .slider .slick-next {
+    right: 16px;
   }
 }
 @media (max-width: 450px) {

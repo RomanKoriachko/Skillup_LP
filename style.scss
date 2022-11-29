@@ -419,7 +419,6 @@ body {
         }
     }
     .benefits-section {
-        min-height: 644px;
         padding: 100px 0px;
         .big-container {
             margin: 0 auto;
@@ -500,7 +499,7 @@ body {
     }
     .slider-section {
         text-align: center;
-        height: 825px;
+        max-height: 825px;
         >p{
             @include fonts.h2();
             margin-bottom: 40px;
@@ -511,19 +510,24 @@ body {
             .slider {
                 .slide-1 {
                     background-image: url(/images/video-pic.png);
+                    background-position: center;
+                    background-size: cover;
                     height: 742px;
                 }
                 .slide-2 {
                     background-image: url(/images/video-pic.png);
+                    background-position: center;
+                    background-size: cover;
                     height: 742px;
                 }
                 .slide-3 {
                     background-image: url(/images/video-pic.png);
+                    background-position: center;
+                    background-size: cover;
                     height: 742px;
                 }
                 .slick-prev:before, .slick-next:before {
                     content: "";
-                    
                 }
                 .slick-prev, .slick-next {
                     width: 20px;
@@ -933,6 +937,28 @@ body {
                 }
             }
         }
+        .slider-section {
+            max-height: 600px;
+            .big-container {
+                .slider {
+                    .slide-1 {
+                        height: 600px;
+                    }
+                    .slide-2 {
+                        height: 600px;
+                    }
+                    .slide-3 {
+                        height: 600px;
+                    }
+                    .slick-prev {
+                        left: 60px;
+                    }
+                    .slick-next {
+                        right: 60px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1191,6 +1217,32 @@ body {
                             height: auto;
                         } 
                     }  
+                }
+            }
+        }
+        .slider-section {
+            >p {
+                @include fonts.mobileH1();
+                text-align: left;
+                margin-left: 15px;
+            }
+            .big-container {
+                .slider {
+                    .slide-1 {
+                        height: 186px;
+                    }
+                    .slide-2 {
+                        height: 186px;
+                    }
+                    .slide-3 {
+                        height: 186px;
+                    }
+                    .slick-prev {
+                        left: 16px;
+                    }
+                    .slick-next {
+                        right: 16px;
+                    }
                 }
             }
         }
