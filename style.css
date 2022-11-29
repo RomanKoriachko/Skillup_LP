@@ -842,6 +842,15 @@ body {
   width: 100%;
 }
 
+@media (max-width: 1250px) {
+  .main .suitable-section .suitable-wrapper {
+    justify-content: center;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item {
+    max-width: 300px;
+    height: auto;
+  }
+}
 @media (max-width: 1200px) {
   .main .review-section .review-section-header {
     font-family: "Exo 2", sans-serif;
@@ -934,6 +943,61 @@ body {
   .main .about-section .about-section-wrapper .about-section-content {
     text-align: left;
     margin-top: 20px;
+  }
+  .main .suitable-section .suitable-section-content .suitable-btn {
+    margin-top: 50px;
+    width: 184px;
+    height: 48px;
+    color: white;
+    background-color: #FA2702;
+    border: 1px solid #FA2702;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.3s all;
+  }
+  .main .suitable-section .suitable-section-content .suitable-btn:hover {
+    background-color: #A61A01;
+    border-color: #A61A01;
+  }
+  .main .suitable-section .suitable-section-content .suitable-btn:active {
+    background-color: #FA7A63;
+    border-color: #FA7A63;
+  }
+  .main .suitable-section .suitable-section-header {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .main .suitable-section .suitable-wrapper {
+    grid-template-areas: "a a b b" "c c d d" ". e e .";
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item {
+    width: 265px;
+    height: 120px;
+    padding: 8px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > img {
+    width: 32px;
+    height: 32px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
   }
 }
 @media (max-width: 576px) {
