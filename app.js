@@ -31,3 +31,22 @@ $(document).ready(function () {
     variableWidth: true,
   });
 });
+
+$(document).ready(function () {
+  $(".plan-section-slider").slick({
+    dots: true,
+    centerMode: true,
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+  });
+});
+
+$(document).ready(function () {
+  $(".plan-section-mobile-slider").slick({
+    dots: true,
+    arrows: false,
+    infinite: false,
+    variableWidth: true,
+  });
+});

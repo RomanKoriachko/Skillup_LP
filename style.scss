@@ -328,6 +328,91 @@ body {
                 padding: 0px 75px;
             }
         }
+        .plan-section-slider {
+            display: none;
+            .plan-section-item {
+                width: 400px;
+                height: 148px;
+                box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+                border-radius: 12px;
+                padding: 0px 54px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                >p {
+                    text-align: left;
+                }
+                >p:nth-child(1) {
+                    @include fonts.h6();
+                    color: #4EBD09;
+                }
+                >p:nth-child(2) {
+                    @include fonts.t6();
+                }
+            }
+            .plan-section-item-1 {
+                background-image: url(/images/plan-item1-img.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 100% 100%;
+            }
+            .plan-section-item-2 {
+                background-image: url(/images/plan-item2-img.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 100% 100%;
+            }
+            .plan-section-item-3 {
+                background-image: url(/images/plan-item3-img.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 100% 100%;
+                padding: 0px 75px;
+            }
+        }
+        .plan-section-mobile-slider {
+            display: none;
+            .plan-section-item {
+                width: 400px;
+                height: 148px;
+                box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+                border-radius: 12px;
+                padding: 0px 54px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                >p {
+                    text-align: left;
+                }
+                >p:nth-child(1) {
+                    @include fonts.mobileT3();
+                    color: #4EBD09;
+                    margin-bottom: 8px;
+                }
+                >p:nth-child(2) {
+                    @include fonts.mobileT9();
+                }
+            }
+            .plan-section-item-1 {
+                background-image: url(/images/plan-item1-img.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 100% 100%;
+            }
+            .plan-section-item-2 {
+                background-image: url(/images/plan-item2-img.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 100% 100%;
+            }
+            .plan-section-item-3 {
+                background-image: url(/images/plan-item3-img.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 100% 100%;
+                padding: 0px 75px;
+            }
+        }
         .plan-section-btn {
             margin-top: 50px;
             @include mainButton();
@@ -689,6 +774,16 @@ body {
                 gap: 150px;
             }
         }
+        .plan-section {
+            .plan-section-wrapper {
+                justify-content: center;
+                .plan-section-item {
+                    width: 350px;
+                    height: 200px;
+                    padding: 0px 30px;
+                }
+            }
+        }
     }
 }
 
@@ -803,6 +898,50 @@ body {
             .aspect-section-content{
                 flex-direction: column-reverse;
                 gap: 50px;
+            }
+        }
+        .plan-section {
+            .plan-section-wrapper {
+                .plan-section-item {
+                    width: 300px;
+                    height: 150px;
+                    >p:nth-child(1) {
+                        @include fonts.mobileT3();
+                    }
+                    >p:nth-child(2) {
+                        @include fonts.mobileT9();
+                    }
+                }
+            }
+        }
+    }
+}
+
+// For plan section slider
+@media(max-width: 715px) {
+    .main {
+        .plan-section {
+            .plan-section-wrapper {
+                display: none;
+            }
+            .plan-section-slider {
+                display: block;
+                .slick-dots {
+                    bottom: -40px;
+                }
+                .slick-dots li {
+                    margin: 0px 0px;
+                }
+                .slick-dots li.slick-active button:before {
+                    color: #333142;
+                }
+                .slick-dots li button:before {
+                    color: #989898;
+                    opacity: 1;
+                }
+                .slick-track {
+                    transform: translate3d(-30px, 0px, 0px);
+                }
             }
         }
     }
@@ -989,6 +1128,18 @@ body {
                 }
             }
         }
+        .plan-section {
+            padding: 32px 0px;
+            .plan-section-header {
+                @include fonts.mobileH2();
+                margin-bottom: 24px;
+                text-align: left;
+            }
+            .plan-section-btn {
+                margin-top: 30px;
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -1027,6 +1178,35 @@ body {
                         margin-left: 16px;
                         margin-top: 8px;
                     }
+                }
+                .slick-dots {
+                    bottom: -40px;
+                }
+                .slick-dots li {
+                    margin: 0px 0px;
+                }
+                .slick-dots li.slick-active button:before {
+                    color: #333142;
+                }
+                .slick-dots li button:before {
+                    color: #989898;
+                    opacity: 1;
+                }
+                .slick-track {
+                    transform: translate3d(-30px, 0px, 0px);
+                }
+            }
+        }
+        .plan-section {
+            .plan-section-slider {
+                display: none;
+            }
+            .plan-section-mobile-slider {
+                display: block;
+                .plan-section-item {
+                    width: 292px;
+                    height: 112px;
+                    padding: 30px;
                 }
                 .slick-dots {
                     bottom: -40px;
