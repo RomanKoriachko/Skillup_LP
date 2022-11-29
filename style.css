@@ -1209,6 +1209,14 @@ body {
     width: 150px;
     height: 150px;
   }
+  .main .form-section {
+    padding: 70px 0px;
+  }
+  .main .form-section .form-section-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
 }
 @media (max-width: 715px) {
   .main .plan-section .plan-section-wrapper {
@@ -1569,6 +1577,38 @@ body {
     width: 104px;
     height: 104px;
     background-size: 90%;
+  }
+  .main .form-section {
+    text-align: left;
+    padding: 32px 0px;
+  }
+  .main .form-section .form-section-wrapper {
+    align-items: stretch;
+  }
+  .main .form-section .form-section-wrapper .form-section-text {
+    width: 100%;
+  }
+  .main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .main .form-section .form-section-wrapper .form-section-text > p:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+  }
+  .main .form-section .form-section-wrapper .form-wrapper form {
+    width: 100%;
+  }
+  .main .form-section .form-section-wrapper .form-wrapper .form-input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .main .form-section .form-section-wrapper .form-wrapper button {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {

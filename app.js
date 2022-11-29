@@ -52,12 +52,3 @@ $(document).ready(function () {
     variableWidth: true,
   });
 });
-
-$(document).ready(function () {
-  $(".companies-slider").slick({
-    arrows: false,
-    infinite: true,
-    variableWidth: true,
-    swipeToSlide: true,
-  });
-});

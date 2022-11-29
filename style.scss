@@ -1022,6 +1022,14 @@ body {
                 }
             }
         }
+        .form-section {
+            padding: 70px 0px;
+            .form-section-wrapper {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+        }
     }
 }
 
@@ -1387,6 +1395,34 @@ body {
             //         margin-right: 8px;
             //     }
             // }
+        }
+        .form-section {
+            text-align: left;
+            padding: 32px 0px;
+            .form-section-wrapper {
+                align-items: stretch;
+                .form-section-text{
+                    width: 100%;
+                    >p:nth-child(1) {
+                        @include fonts.mobileH2();
+                    }
+                    >p:nth-child(2) {
+                        @include fonts.mobileT6();
+                    }
+                }
+                .form-wrapper{
+                    form{
+                        width: 100%;
+                    }
+                    .form-input {
+                        width: 100%;
+                        margin-bottom: 8px;
+                    }
+                    button {
+                        width: 100%;
+                    }
+                } 
+            }
         }
     }
 }
