@@ -56,7 +56,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".companies-slider").slick({
     arrows: false,
-    infinite: false,
+    infinite: true,
     centerMode: true,
     variableWidth: true,
   });
