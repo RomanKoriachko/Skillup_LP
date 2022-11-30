@@ -965,6 +965,10 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
+  transition: 0.3s all;
+}
+.footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links button:hover {
+  transform: scale(1.2);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .instagram {
   background-image: url(images/icon-instagram.png);

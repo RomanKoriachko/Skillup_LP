@@ -739,6 +739,10 @@ body {
                         background-repeat: no-repeat;
                         background-size: 100%;
                         cursor: pointer;
+                        transition: .3s all;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
                     }
                     .instagram {
                         background-image: url(images/icon-instagram.png);
@@ -1383,15 +1387,6 @@ body {
                 @include fonts.mobileH2();
                 margin-bottom: 48px;
             }
-            // .companies-section-wrapper {
-            //     grid-template-columns: repeat(3, 104px);
-            //     gap: 8px;
-            //     .companies-section-item {
-            //         width: 104px;
-            //         height: 104px;
-            //         background-size: 90%;
-            //     }
-            // }
             .companies-section-wrapper {
                 display: none;
             }
