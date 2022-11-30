@@ -82,7 +82,10 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 12px 0px;
+  padding: 20px 0px;
+}
+.header .header-items .header-logo {
+  height: 60px;
 }
 .header .header-menu {
   gap: 0px 40px;
@@ -188,16 +191,16 @@ body {
   background-repeat: no-repeat;
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-date {
-  background-image: url(images/item-date-img.png);
+  background-image: url(images/item-date-img.svg);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-time {
-  background-image: url(images/item-time-img.png);
+  background-image: url(images/item-time-img.svg);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-place {
-  background-image: url(images/item-place-img.png);
+  background-image: url(images/item-place-img.svg);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-cost {
-  background-image: url(images/item-cost-img.png);
+  background-image: url(images/item-cost-img.svg);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper > p {
   font-family: "Exo 2", sans-serif;
@@ -232,6 +235,8 @@ body {
   width: 549px;
   height: 454px;
   background-image: url(images/review-section-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .main .about-section {
   padding: 100px 0px;
@@ -1053,8 +1058,8 @@ body {
     display: block;
     width: auto;
   }
-  .header .header-items > a > img {
-    height: 40px;
+  .header .header-items .header-logo {
+    height: 50px;
   }
   .header .header-items .header-menu {
     display: none;
@@ -1258,6 +1263,28 @@ body {
   }
 }
 @media (max-width: 715px) {
+  .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text {
+    margin-left: 22px;
+  }
+  .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text::before {
+    margin-right: 15px;
+    margin-left: -22px;
+  }
+  .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text:nth-child(1) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text:nth-child(2) {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 145%;
+    margin-bottom: 24px;
+  }
   .main .plan-section .plan-section-wrapper {
     display: none;
   }
@@ -1286,12 +1313,9 @@ body {
     height: 40px;
   }
   .header .header-items {
-    padding: 5px 0px;
+    padding: 4px 0px;
   }
-  .header .header-items > a {
-    margin-left: -5px;
-  }
-  .header .header-items > a > img {
+  .header .header-items .header-logo {
     height: 30px;
   }
   .main .review-section {
@@ -1313,9 +1337,9 @@ body {
     background-image: url(images/review-section-tablet-img.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     margin-right: -15px;
-    height: 207px;
+    height: 330px;
   }
   .main .review-section .review-section-content {
     gap: 0px;
@@ -1323,23 +1347,18 @@ body {
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list {
     margin-left: -8px;
   }
+  .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text {
+    margin-left: 38px;
+  }
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text::before {
     margin-right: 15px;
     margin-left: -20px;
   }
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text:nth-child(1) {
-    font-family: "Exo 2", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
     margin-bottom: 20px;
     margin-top: 30px;
   }
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text:nth-child(2) {
-    font-family: "Exo 2", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 145%;
     margin-bottom: 24px;
   }
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-btn {
@@ -1691,6 +1710,9 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .main .review-section .mobile-row .review-section-content-mobile-img {
+    height: 260px;
+  }
   .main .suitable-section .suitable-slider {
     display: none;
   }
