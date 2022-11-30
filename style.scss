@@ -463,18 +463,18 @@ body {
                                 }
                             }
                             .benefits-section-item-btn{
-                                height: 6px;
-                                width: 12px;
+                                height: 24px;
+                                width: 24px;
                                 border: none;
                                 background-color: transparent;
-                                background-image: url(images/benefits-section-arrow-down-img.png);
+                                background-image: url(images/benefits-section-arrow-down-img.svg);
                                 background-position: center;
                                 background-repeat: no-repeat;
                                 background-size: 100%;
                                 transition: .3s all;
                             }
                             .active-btn {
-                                background-image: url(images/benefits-section-arrow-up-img.png)
+                                background-image: url(images/benefits-section-arrow-up-img.svg)
                             }
                         }
                     }
@@ -544,12 +544,12 @@ body {
                 }
                 .slick-prev {
                     left: 125px;
-                    background-image: url(images/arrow-left.png);
+                    background-image: url(images/arrow-left.svg);
                     z-index: 10;
                 }
                 .slick-next {
                     right: 125px;
-                    background-image: url(images/arrow-right.png);
+                    background-image: url(images/arrow-right.svg);
                     z-index: 10;
                 }
             }
@@ -750,16 +750,16 @@ body {
                         }
                     }
                     .instagram {
-                        background-image: url(images/icon-instagram.png);
+                        background-image: url(images/icon-instagram.svg);
                     }
                     .youtube {
-                        background-image: url(images/icon-youtube.png);
+                        background-image: url(images/icon-youtube.svg);
                     }
                     .linkedin {
-                        background-image: url(images/icon-linkedin.png);
+                        background-image: url(images/icon-linkedin.svg);
                     }
                     .facebook {
-                        background-image: url(images/icon-facebook.png);
+                        background-image: url(images/icon-facebook.svg);
                     }
                 }
             }

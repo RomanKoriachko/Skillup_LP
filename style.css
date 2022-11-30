@@ -607,18 +607,18 @@ body {
   line-height: 24px;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .benefits-section-item-btn {
-  height: 6px;
-  width: 12px;
+  height: 24px;
+  width: 24px;
   border: none;
   background-color: transparent;
-  background-image: url(images/benefits-section-arrow-down-img.png);
+  background-image: url(images/benefits-section-arrow-down-img.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.3s all;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .active-btn {
-  background-image: url(images/benefits-section-arrow-up-img.png);
+  background-image: url(images/benefits-section-arrow-up-img.svg);
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-subitem {
   font-family: "Exo 2", sans-serif;
@@ -689,12 +689,12 @@ body {
 }
 .main .slider-section .big-container .slider .slick-prev {
   left: 125px;
-  background-image: url(images/arrow-left.png);
+  background-image: url(images/arrow-left.svg);
   z-index: 10;
 }
 .main .slider-section .big-container .slider .slick-next {
   right: 125px;
-  background-image: url(images/arrow-right.png);
+  background-image: url(images/arrow-right.svg);
   z-index: 10;
 }
 .main .career-section {
@@ -976,16 +976,16 @@ body {
   transform: scale(1.2);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .instagram {
-  background-image: url(images/icon-instagram.png);
+  background-image: url(images/icon-instagram.svg);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .youtube {
-  background-image: url(images/icon-youtube.png);
+  background-image: url(images/icon-youtube.svg);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .linkedin {
-  background-image: url(images/icon-linkedin.png);
+  background-image: url(images/icon-linkedin.svg);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .facebook {
-  background-image: url(images/icon-facebook.png);
+  background-image: url(images/icon-facebook.svg);
 }
 .footer .footer-wrapper > div:nth-child(2) {
   width: 100%;
