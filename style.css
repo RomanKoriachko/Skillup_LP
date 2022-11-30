@@ -188,16 +188,16 @@ body {
   background-repeat: no-repeat;
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-date {
-  background-image: url(/images/item-date-img.png);
+  background-image: url(images/item-date-img.png);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-time {
-  background-image: url(/images/item-time-img.png);
+  background-image: url(images/item-time-img.png);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-place {
-  background-image: url(/images/item-place-img.png);
+  background-image: url(images/item-place-img.png);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper .item-cost {
-  background-image: url(/images/item-cost-img.png);
+  background-image: url(images/item-cost-img.png);
 }
 .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-details .review-section-content-details-wrapper > p {
   font-family: "Exo 2", sans-serif;
@@ -231,7 +231,7 @@ body {
 .main .review-section .review-section-content .review-section-content-img {
   width: 549px;
   height: 454px;
-  background-image: url(/images/review-section-img.png);
+  background-image: url(images/review-section-img.png);
 }
 .main .about-section {
   padding: 100px 0px;
@@ -413,19 +413,19 @@ body {
   line-height: 145%;
 }
 .main .plan-section .plan-section-wrapper .plan-section-item-1 {
-  background-image: url(/images/plan-item1-img.png);
+  background-image: url(images/plan-item1-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-wrapper .plan-section-item-2 {
-  background-image: url(/images/plan-item2-img.png);
+  background-image: url(images/plan-item2-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-wrapper .plan-section-item-3 {
-  background-image: url(/images/plan-item3-img.png);
+  background-image: url(images/plan-item3-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
@@ -461,19 +461,19 @@ body {
   line-height: 145%;
 }
 .main .plan-section .plan-section-slider .plan-section-item-1 {
-  background-image: url(/images/plan-item1-img.png);
+  background-image: url(images/plan-item1-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-slider .plan-section-item-2 {
-  background-image: url(/images/plan-item2-img.png);
+  background-image: url(images/plan-item2-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-slider .plan-section-item-3 {
-  background-image: url(/images/plan-item3-img.png);
+  background-image: url(images/plan-item3-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
@@ -510,19 +510,19 @@ body {
   line-height: 145%;
 }
 .main .plan-section .plan-section-mobile-slider .plan-section-item-1 {
-  background-image: url(/images/plan-item1-img.png);
+  background-image: url(images/plan-item1-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-mobile-slider .plan-section-item-2 {
-  background-image: url(/images/plan-item2-img.png);
+  background-image: url(images/plan-item2-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
 }
 .main .plan-section .plan-section-mobile-slider .plan-section-item-3 {
-  background-image: url(/images/plan-item3-img.png);
+  background-image: url(images/plan-item3-img.png);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
@@ -557,7 +557,7 @@ body {
 .main .benefits-section .big-container {
   margin: 0 auto;
   max-width: 1440px;
-  background-image: url(/images/benefits-section-bg.png);
+  background-image: url(images/benefits-section-bg.png);
   background-position-x: left;
   background-position-y: 150px;
   background-repeat: no-repeat;
@@ -580,7 +580,7 @@ body {
   margin-top: -20px;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper {
-  margin: 24px 0px;
+  padding: 24px 0px;
   background-color: #17161F;
   cursor: pointer;
 }
@@ -606,14 +606,14 @@ body {
   width: 12px;
   border: none;
   background-color: transparent;
-  background-image: url(/images/benefits-section-arrow-down-img.png);
+  background-image: url(images/benefits-section-arrow-down-img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.3s all;
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-item-wrapper .benefits-section-item .active-btn {
-  background-image: url(/images/benefits-section-arrow-up-img.png);
+  background-image: url(images/benefits-section-arrow-up-img.png);
 }
 .main .benefits-section .big-container .benefits-section-content .benefits-section-menu .benefits-section-subitem {
   font-family: "Exo 2", sans-serif;
@@ -655,19 +655,19 @@ body {
   max-width: 1440px;
 }
 .main .slider-section .big-container .slider .slide-1 {
-  background-image: url(/images/video-pic.png);
+  background-image: url(images/video-pic.png);
   background-position: center;
   background-size: cover;
   height: 742px;
 }
 .main .slider-section .big-container .slider .slide-2 {
-  background-image: url(/images/video-pic.png);
+  background-image: url(images/video-pic.png);
   background-position: center;
   background-size: cover;
   height: 742px;
 }
 .main .slider-section .big-container .slider .slide-3 {
-  background-image: url(/images/video-pic.png);
+  background-image: url(images/video-pic.png);
   background-position: center;
   background-size: cover;
   height: 742px;
@@ -684,12 +684,12 @@ body {
 }
 .main .slider-section .big-container .slider .slick-prev {
   left: 125px;
-  background-image: url(/images/arrow-left.png);
+  background-image: url(images/arrow-left.png);
   z-index: 10;
 }
 .main .slider-section .big-container .slider .slick-next {
   right: 125px;
-  background-image: url(/images/arrow-right.png);
+  background-image: url(images/arrow-right.png);
   z-index: 10;
 }
 .main .career-section {
@@ -793,22 +793,22 @@ body {
   background-repeat: no-repeat;
 }
 .main .companies-section .companies-section-wrapper .company-1 {
-  background-image: url(/images/companies-logo-1.png);
+  background-image: url(images/companies-logo-1.png);
 }
 .main .companies-section .companies-section-wrapper .company-2 {
-  background-image: url(/images/companies-logo-2.png);
+  background-image: url(images/companies-logo-2.png);
 }
 .main .companies-section .companies-section-wrapper .company-3 {
-  background-image: url(/images/companies-logo-3.png);
+  background-image: url(images/companies-logo-3.png);
 }
 .main .companies-section .companies-section-wrapper .company-4 {
-  background-image: url(/images/companies-logo-4.png);
+  background-image: url(images/companies-logo-4.png);
 }
 .main .companies-section .companies-section-wrapper .company-5 {
-  background-image: url(/images/companies-logo-5.png);
+  background-image: url(images/companies-logo-5.png);
 }
 .main .companies-section .companies-section-wrapper .company-6 {
-  background-image: url(/images/companies-logo-6.png);
+  background-image: url(images/companies-logo-6.png);
 }
 .main .companies-section .companies-slider {
   display: none;
@@ -823,22 +823,22 @@ body {
   background-size: 85%;
 }
 .main .companies-section .companies-slider .company-1 {
-  background-image: url(/images/companies-logo-1.png);
+  background-image: url(images/companies-logo-1.png);
 }
 .main .companies-section .companies-slider .company-2 {
-  background-image: url(/images/companies-logo-2.png);
+  background-image: url(images/companies-logo-2.png);
 }
 .main .companies-section .companies-slider .company-3 {
-  background-image: url(/images/companies-logo-3.png);
+  background-image: url(images/companies-logo-3.png);
 }
 .main .companies-section .companies-slider .company-4 {
-  background-image: url(/images/companies-logo-4.png);
+  background-image: url(images/companies-logo-4.png);
 }
 .main .companies-section .companies-slider .company-5 {
-  background-image: url(/images/companies-logo-5.png);
+  background-image: url(images/companies-logo-5.png);
 }
 .main .companies-section .companies-slider .company-6 {
-  background-image: url(/images/companies-logo-6.png);
+  background-image: url(images/companies-logo-6.png);
 }
 .main .form-section {
   padding: 100px 0px;
@@ -967,16 +967,16 @@ body {
   cursor: pointer;
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .instagram {
-  background-image: url(/images/icon-instagram.png);
+  background-image: url(images/icon-instagram.png);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .youtube {
-  background-image: url(/images/icon-youtube.png);
+  background-image: url(images/icon-youtube.png);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .linkedin {
-  background-image: url(/images/icon-linkedin.png);
+  background-image: url(images/icon-linkedin.png);
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .facebook {
-  background-image: url(/images/icon-facebook.png);
+  background-image: url(images/icon-facebook.png);
 }
 .footer .footer-wrapper > div:nth-child(2) {
   width: 100%;
@@ -1083,7 +1083,7 @@ body {
     width: 300px;
   }
   .main .review-section .review-section-content .review-section-content-img {
-    background-image: url(/images/review-section-tablet-img.png);
+    background-image: url(images/review-section-tablet-img.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1306,7 +1306,7 @@ body {
     line-height: 145%;
   }
   .main .review-section .mobile-row .review-section-content-mobile-img {
-    background-image: url(/images/review-section-tablet-img.png);
+    background-image: url(images/review-section-tablet-img.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
