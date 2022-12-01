@@ -798,22 +798,22 @@ body {
   background-repeat: no-repeat;
 }
 .main .companies-section .companies-section-wrapper .company-1 {
-  background-image: url(images/companies-logo-1.png);
+  background-image: url(images/companies-logo-1.svg);
 }
 .main .companies-section .companies-section-wrapper .company-2 {
-  background-image: url(images/companies-logo-2.png);
+  background-image: url(images/companies-logo-2.svg);
 }
 .main .companies-section .companies-section-wrapper .company-3 {
-  background-image: url(images/companies-logo-3.png);
+  background-image: url(images/companies-logo-3.svg);
 }
 .main .companies-section .companies-section-wrapper .company-4 {
-  background-image: url(images/companies-logo-4.png);
+  background-image: url(images/companies-logo-4.svg);
 }
 .main .companies-section .companies-section-wrapper .company-5 {
-  background-image: url(images/companies-logo-5.png);
+  background-image: url(images/companies-logo-5.svg);
 }
 .main .companies-section .companies-section-wrapper .company-6 {
-  background-image: url(images/companies-logo-6.png);
+  background-image: url(images/companies-logo-6.svg);
 }
 .main .companies-section .companies-slider {
   display: none;
@@ -828,22 +828,22 @@ body {
   background-size: 85%;
 }
 .main .companies-section .companies-slider .company-1 {
-  background-image: url(images/companies-logo-1.png);
+  background-image: url(images/companies-logo-1.svg);
 }
 .main .companies-section .companies-slider .company-2 {
-  background-image: url(images/companies-logo-2.png);
+  background-image: url(images/companies-logo-2.svg);
 }
 .main .companies-section .companies-slider .company-3 {
-  background-image: url(images/companies-logo-3.png);
+  background-image: url(images/companies-logo-3.svg);
 }
 .main .companies-section .companies-slider .company-4 {
-  background-image: url(images/companies-logo-4.png);
+  background-image: url(images/companies-logo-4.svg);
 }
 .main .companies-section .companies-slider .company-5 {
-  background-image: url(images/companies-logo-5.png);
+  background-image: url(images/companies-logo-5.svg);
 }
 .main .companies-section .companies-slider .company-6 {
-  background-image: url(images/companies-logo-6.png);
+  background-image: url(images/companies-logo-6.svg);
 }
 .main .form-section {
   padding: 100px 0px;
