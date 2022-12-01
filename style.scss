@@ -505,7 +505,6 @@ body {
     }
     .slider-section {
         text-align: center;
-        max-height: 825px;
         >p{
             @include fonts.h2();
             margin-bottom: 40px;
@@ -514,26 +513,11 @@ body {
             margin: 0 auto;
             max-width: 1440px;
             .slider {
-                .slide-1 {
-                    background-image: url(images/video-pic.png);
-                    background-position: center;
-                    background-size: cover;
-                    height: 742px;
-                }
-                .slide-2 {
-                    background-image: url(images/video-pic.png);
-                    background-position: center;
-                    background-size: cover;
-                    height: 742px;
-                }
-                .slide-3 {
-                    background-image: url(images/video-pic.png);
-                    background-position: center;
-                    background-size: cover;
-                    height: 742px;
-                }
                 .slick-prev:before, .slick-next:before {
                     content: "";
+                }
+                .slide {
+                    height: 742px;
                 }
                 .slick-prev, .slick-next {
                     width: 20px;
@@ -541,6 +525,9 @@ body {
                     background-size: 100%;
                     background-repeat: no-repeat;
                     background-position: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .3s all;
                 }
                 .slick-prev {
                     left: 125px;
@@ -551,6 +538,18 @@ body {
                     right: 125px;
                     background-image: url(images/arrow-right.svg);
                     z-index: 10;
+                }
+                &:hover {
+                    .slick-prev, .slick-next {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+            &:hover {
+                .big-container-cover {
+                    opacity: 0;
+                    visibility: hidden;
                 }
             }
         }
@@ -987,20 +986,18 @@ body {
         .slider-section {
             .big-container {
                 .slider {
-                    .slide-1 {
-                        height: 600px;
-                    }
-                    .slide-2 {
-                        height: 600px;
-                    }
-                    .slide-3 {
-                        height: 600px;
+                    .slide {
+                        height: 500px;
                     }
                     .slick-prev {
                         left: 60px;
                     }
                     .slick-next {
                         right: 60px;
+                    }
+                    .slick-prev, .slick-next {
+                        opacity: 1;
+                        visibility: visible;
                     }
                 }
             }
@@ -1340,13 +1337,7 @@ body {
             }
             .big-container {
                 .slider {
-                    .slide-1 {
-                        height: 186px;
-                    }
-                    .slide-2 {
-                        height: 186px;
-                    }
-                    .slide-3 {
+                    .slide {
                         height: 186px;
                     }
                     .slick-prev {

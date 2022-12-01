@@ -11,7 +11,7 @@ for (let i = 0; i < dropdownMenu.length; i++) {
 
 $(document).ready(function () {
   $(".slider").slick({
-    respondTo: "min",
+    // adaptiveHeight: true,
   });
 });
 
