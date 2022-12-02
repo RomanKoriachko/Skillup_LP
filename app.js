@@ -61,3 +61,25 @@ $(document).ready(function () {
     variableWidth: true,
   });
 });
+
+let slider = document.querySelector(".slider");
+let cover = document.querySelector(".slider-cover");
+
+window.addEventListener("scroll", function () {
+  let scrollHight = window.pageYOffset;
+  let screenHeigth = window.screen.height;
+  let screenWidth = window.screen.width;
+  let sliderHight = slider.getBoundingClientRect().top + window.pageYOffset;
+  console.log(screenWidth);
+  if (
+    scrollHight >= sliderHight - screenHeigth / 2 &&
+    scrollHight <= sliderHight + screenHeigth / 4 &&
+    screenWidth >= 576
+  ) {
+    cover.classList.add("hide");
+    cover.classList.remove("show");
+  } else {
+    cover.classList.add("show");
+    cover.classList.remove("hide");
+  }
+});

@@ -657,6 +657,30 @@ body {
 .main .slider-section .big-container {
   margin: 0 auto;
   max-width: 1440px;
+  position: relative;
+}
+.main .slider-section .big-container .slider-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 22, 31, 0.7);
+  z-index: 10;
+  transition: 0.3s all;
+}
+.main .slider-section .big-container .show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.main .slider-section .big-container .hide {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+.main .slider-section .big-container:hover .slider-cover {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
 }
 .main .slider-section .big-container .slider .slick-prev:before, .main .slider-section .big-container .slider .slick-next:before {
   content: "";
