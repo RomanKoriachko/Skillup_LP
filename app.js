@@ -55,8 +55,18 @@ $(document).ready(function () {
   $(".companies-slider").slick({
     arrows: false,
     infinite: true,
+    centerMode: false,
+    variableWidth: true,
+    autoplay: true,
+  });
+});
+$(document).ready(function () {
+  $(".companies-tablet-slider").slick({
+    arrows: false,
+    infinite: true,
     centerMode: true,
     variableWidth: true,
+    autoplay: true,
   });
 });
 
