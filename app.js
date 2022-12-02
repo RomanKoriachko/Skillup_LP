@@ -10,9 +10,7 @@ for (let i = 0; i < dropdownMenu.length; i++) {
 }
 
 $(document).ready(function () {
-  $(".slider").slick({
-    // adaptiveHeight: true,
-  });
+  $(".slider").slick({});
 });
 
 $(document).ready(function () {

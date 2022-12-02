@@ -541,7 +541,8 @@ body {
                     content: "";
                 }
                 .slide {
-                    height: 742px;
+                    height: 600px;
+                    margin: 0px 110px;
                 }
                 .slick-prev, .slick-next {
                     width: 20px;
@@ -554,12 +555,12 @@ body {
                     transition: .3s all;
                 }
                 .slick-prev {
-                    left: 125px;
+                    left: 50px;
                     background-image: url(images/arrow-left.svg);
                     z-index: 10;
                 }
                 .slick-next {
-                    right: 125px;
+                    right: 50px;
                     background-image: url(images/arrow-right.svg);
                     z-index: 10;
                 }
@@ -1012,6 +1013,7 @@ body {
                 .slider {
                     .slide {
                         height: 500px;
+                        margin: 0px 0px;
                     }
                     .slick-prev {
                         left: 60px;
@@ -1360,14 +1362,9 @@ body {
                 margin-left: 15px;
             }
             .big-container {
-                // .slider-cover {
-                //     z-index: -1;
-                //     visibility: hidden;
-                //     opacity: 0;
-                // }
                 .slider {
                     .slide {
-                        height: 186px;
+                        height: 230px;
                     }
                     .slick-prev {
                         left: 16px;
