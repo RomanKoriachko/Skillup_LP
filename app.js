@@ -58,6 +58,7 @@ $(document).ready(function () {
     centerMode: false,
     variableWidth: true,
     autoplay: true,
+    autoplaySpeed: 1000,
   });
 });
 $(document).ready(function () {
@@ -67,6 +68,7 @@ $(document).ready(function () {
     centerMode: true,
     variableWidth: true,
     autoplay: true,
+    autoplaySpeed: 1000,
   });
 });
 
