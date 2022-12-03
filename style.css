@@ -1005,38 +1005,44 @@ body {
 .footer .footer-wrapper .contacts-block {
   padding: 41px 0px;
 }
-.footer .footer-wrapper .contacts-block .contacts-header {
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 43px;
-  margin-bottom: 50px;
-}
 .footer .footer-wrapper .contacts-block .contacts-wrapper {
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
-.footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-t1 {
-  font-family: "Exo 2", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  margin-bottom: 15px;
-  text-align: center;
+.footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-viber {
+  width: 32px;
+  height: 32px;
+  background-image: url(images/icon-viber.svg);
+  background-size: contain;
+  margin-right: 10px;
 }
-.footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-t2 {
+.footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-telegram {
+  width: 32px;
+  height: 32px;
+  background-image: url(images/licon-telegram.svg);
+  background-size: contain;
+  margin-right: 20px;
+}
+.footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-text {
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
 }
-.footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links {
-  justify-content: space-between;
+.footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-email {
+  width: 32px;
+  height: 32px;
+  background-image: url(images/icon-email.svg);
+  background-size: contain;
+  margin-right: 20px;
+}
+.footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links > a {
+  margin-left: 21px;
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links button {
-  width: 37px;
-  height: 37px;
+  width: 32px;
+  height: 32px;
   background: transparent;
   border: none;
   background-position: center;
@@ -1059,9 +1065,6 @@ body {
 }
 .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links .facebook {
   background-image: url(images/icon-facebook.svg);
-}
-.footer .footer-wrapper > div:nth-child(2) {
-  width: 100%;
 }
 
 @media (max-width: 1250px) {
@@ -1325,6 +1328,18 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  }
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-viber {
+    margin-right: 8px;
+  }
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-telegram {
+    margin-right: 8px;
+  }
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-email {
+    margin-right: 8px;
+  }
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links > a {
+    margin-left: 17px;
   }
 }
 @media (max-width: 715px) {
@@ -1724,43 +1739,33 @@ body {
   .main .form-section .form-section-wrapper .form-wrapper button {
     width: 100%;
   }
-  .footer .footer-wrapper .contacts-block {
-    padding: 48px 0px 32px 0px;
-  }
-  .footer .footer-wrapper .contacts-block .contacts-header {
-    text-align: left;
-    font-family: "Exo 2", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 26px;
-  }
   .footer .footer-wrapper .contacts-block .contacts-wrapper {
-    align-items: flex-start;
-    gap: 0px;
+    gap: 24px;
   }
-  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-t1 {
-    text-align: left;
-    font-family: "Exo 2", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 8px;
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .row {
+    align-items: center;
   }
-  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-t2 {
-    text-align: left;
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-viber {
+    height: 24px;
+    width: 24px;
+  }
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-telegram {
+    height: 24px;
+    width: 24px;
+  }
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-email {
+    height: 24px;
+    width: 24px;
+  }
+  .footer .footer-wrapper .contacts-block .contacts-wrapper .contacts-text {
     font-family: "Exo 2", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 16px;
-  }
-  .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links {
-    margin-top: 32px;
   }
   .footer .footer-wrapper .contacts-block .contacts-wrapper .social-media-links button {
-    width: 23px;
-    height: 23px;
+    height: 24px;
+    width: 24px;
   }
 }
 @media (max-width: 450px) {

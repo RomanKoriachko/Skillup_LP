@@ -796,27 +796,41 @@ body {
     .footer-wrapper {
         .contacts-block {
             padding: 41px 0px;
-            .contacts-header {
-                text-align: center;
-                @include fonts.h2();
-                margin-bottom: 50px;
-            }
             .contacts-wrapper {
-                justify-content: space-evenly;
-                .contacts-t1{
-                    @include fonts.t1();
-                    margin-bottom: 15px;
-                    text-align: center;
+                justify-content: space-between;
+                align-items: center;
+                .contacts-viber {
+                    width: 32px;
+                    height: 32px;
+                    background-image: url(images/icon-viber.svg);
+                    background-size: contain;
+                    margin-right: 10px;
                 }
-                .contacts-t2 {
+                .contacts-telegram {
+                    width: 32px;
+                    height: 32px;
+                    background-image: url(images/licon-telegram.svg);
+                    background-size: contain;
+                    margin-right: 20px;
+                }
+                .contacts-text {
                     @include fonts.t2();
                     text-align: center;
                 }
-                .social-media-links {
-                    justify-content: space-between;
-                    button{
-                        width: 37px;
-                        height: 37px;
+                .contacts-email {
+                    width: 32px;
+                    height: 32px;
+                    background-image: url(images/icon-email.svg);
+                    background-size: contain;
+                    margin-right: 20px;
+                }
+                    .social-media-links {
+                        >a {
+                            margin-left: 21px;
+                        }
+                        button{
+                        width: 32px;
+                        height: 32px;
                         background: transparent;
                         border: none;
                         background-position: center;
@@ -842,9 +856,6 @@ body {
                     }
                 }
             }
-        }
-        >div:nth-child(2) {
-            width: 100%;
         }
     }
 }
@@ -1116,6 +1127,20 @@ body {
                     flex-direction: column;
                     align-items: center;
                     gap: 30px;
+                    .contacts-viber {
+                        margin-right: 8px;
+                    }
+                    .contacts-telegram {
+                        margin-right: 8px;
+                    }
+                    .contacts-email {
+                        margin-right: 8px;
+                    }
+                    .social-media-links {
+                        >a {
+                            margin-left: 17px;
+                        }
+                    }
                 }
             }
         }
@@ -1516,30 +1541,30 @@ body {
     .footer {
         .footer-wrapper {
             .contacts-block {
-                padding: 48px 0px 32px 0px;
-                .contacts-header {
-                    text-align: left;
-                    @include fonts.mobileH1();
-                    margin-bottom: 26px;
-                }
                 .contacts-wrapper {
-                    align-items: flex-start;
-                    gap: 0px;
-                    .contacts-t1 {
-                        text-align: left;
-                        @include fonts.mobileT5();
-                        margin-bottom: 8px;
+                    .row{
+                        align-items: center;
                     }
-                    .contacts-t2 {
-                        text-align: left;
+                    gap: 24px;
+                    .contacts-viber {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    .contacts-telegram {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    .contacts-email {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    .contacts-text {
                         @include fonts.mobileT7();
-                        margin-bottom: 16px;
                     }
                     .social-media-links {
-                        margin-top: 32px;
-                        button{
-                            width: 23px;
-                            height: 23px;
+                        button {
+                            height: 24px;
+                            width: 24px;
                         }
                     }
                 }
