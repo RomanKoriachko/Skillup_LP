@@ -173,7 +173,7 @@ body {
             .review-section-content-img {
                 width: 549px;
                 height: 454px;
-                background-image: url(images/review-section-img.png);
+                background-image: url(images/review-section-img.webp);
                 background-repeat: no-repeat;
                 background-size: contain;
             }
@@ -184,6 +184,9 @@ body {
         .about-section-wrapper {
             align-items: center;
             gap: 100px;
+            >img{
+                width: 455px;
+            }
             .about-section-content {
                 p:nth-child(1) {
                     @include fonts.h2();
@@ -282,6 +285,9 @@ body {
                 >p{
                     @include fonts.t5();
                 }
+            }
+            >img {
+                width: 394px
             }
         }
     }
@@ -598,6 +604,9 @@ body {
                 button{
                     @include mainButton();
                 }
+            }
+            >img{
+                width: 433px;
             }
         }
     }
@@ -948,7 +957,7 @@ body {
                     }
                 }
                 .review-section-content-img{
-                    background-image: url(images/review-section-tablet-img.png);
+                    background-image: url(images/review-section-tablet-img.webp);
                     background-position: right;
                     background-repeat: no-repeat;
                     background-size: contain;
@@ -1180,6 +1189,7 @@ body {
     }
     .main{
         .review-section {
+            padding-top: 0;
             margin-top: 40px;
             .mobile-row {
                 display: grid;
@@ -1190,10 +1200,10 @@ body {
                     @include fonts.mobileT6();
                 }
                 .review-section-content-mobile-img {
-                    background-image: url(images/review-section-tablet-img.png);
+                    background-image: url(images/review-section-tablet-img.webp);
                     background-position: right;
                     background-repeat: no-repeat;
-                    background-size: 100%;
+                    background-size: contain;
                     margin-right: -15px;
                     height: 330px;
                 }
@@ -1212,7 +1222,7 @@ body {
                         }
                         .review-section-content-text:nth-child(1) {
                             margin-bottom: 20px;
-                            margin-top: 30px;
+                            margin-top: 0px;
                         }
                         .review-section-content-text:nth-child(2) {
                             margin-bottom: 24px;
@@ -1544,7 +1554,7 @@ body {
         .review-section {
             .mobile-row {
                 .review-section-content-mobile-img {
-                    height: 260px;
+                    height: 210px;
                 }
             }
         }

@@ -234,7 +234,7 @@ body {
 .main .review-section .review-section-content .review-section-content-img {
   width: 549px;
   height: 454px;
-  background-image: url(images/review-section-img.png);
+  background-image: url(images/review-section-img.webp);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -244,6 +244,9 @@ body {
 .main .about-section .about-section-wrapper {
   align-items: center;
   gap: 100px;
+}
+.main .about-section .about-section-wrapper > img {
+  width: 455px;
 }
 .main .about-section .about-section-wrapper .about-section-content p:nth-child(1) {
   font-family: "Exo 2", sans-serif;
@@ -378,6 +381,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+}
+.main .aspect-section .aspect-section-content > img {
+  width: 394px;
 }
 .main .plan-section {
   padding: 50px 0px;
@@ -763,6 +769,9 @@ body {
 .main .career-section .career-section-wrapper .career-section-text button:active {
   background-color: #FA7A63;
   border-color: #FA7A63;
+}
+.main .career-section .career-section-wrapper > img {
+  width: 433px;
 }
 .main .count-section {
   padding: 60px 0px;
@@ -1150,7 +1159,7 @@ body {
     width: 300px;
   }
   .main .review-section .review-section-content .review-section-content-img {
-    background-image: url(images/review-section-tablet-img.png);
+    background-image: url(images/review-section-tablet-img.webp);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1375,6 +1384,7 @@ body {
     height: 30px;
   }
   .main .review-section {
+    padding-top: 0;
     margin-top: 40px;
   }
   .main .review-section .mobile-row {
@@ -1390,10 +1400,10 @@ body {
     line-height: 145%;
   }
   .main .review-section .mobile-row .review-section-content-mobile-img {
-    background-image: url(images/review-section-tablet-img.png);
+    background-image: url(images/review-section-tablet-img.webp);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     margin-right: -15px;
     height: 330px;
   }
@@ -1412,7 +1422,7 @@ body {
   }
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text:nth-child(1) {
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .main .review-section .review-section-content .review-section-content-wrapper .review-section-content-list .review-section-content-text:nth-child(2) {
     margin-bottom: 24px;
@@ -1755,7 +1765,7 @@ body {
 }
 @media (max-width: 450px) {
   .main .review-section .mobile-row .review-section-content-mobile-img {
-    height: 260px;
+    height: 210px;
   }
   .main .suitable-section .suitable-slider {
     display: none;
