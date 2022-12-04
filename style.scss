@@ -61,14 +61,12 @@ body {
             list-style: none;
             .header-menu-item.active {
                 color: #ffffff;
-                font-weight: 700;
-                font-size: 16px;
+                @include fonts.t4();
             }
             .header-menu-item{
                 color: #989898;
                 text-decoration: none;
-                font-weight: 400;
-                font-size: 16px;
+                @include fonts.t5();
             }
         }
         
@@ -199,7 +197,7 @@ body {
         }
     }
     .suitable-section {
-        background-color: #1F1E28;
+        background: #1F1E28;
         padding: 50px 0px;
         .suitable-section-content {
             text-align: center;
@@ -293,22 +291,24 @@ body {
     }
     .plan-section {
         padding: 50px 0px;
-        background-color: #1F1E28;
+        background: #1F1E28;
         text-align: center;
+        position: relative;
         .plan-section-header {
             @include fonts.h2();
             margin-bottom: 50px;
         }
         .plan-section-wrapper {
+            justify-content: space-between;
             .plan-section-item {
-                width: 400px;
-                height: 148px;
-                box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+                width: 470px;
+                height: 247px;
                 border-radius: 12px;
-                padding: 0px 54px;
+                padding: 0px 86px;
+                margin-left: -30px;
+                margin-right: -30px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 >p {
                     text-align: left;
                 }
@@ -323,40 +323,47 @@ body {
             .plan-section-item-1 {
                 background-image: url(images/plan-item1-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
+                >p:nth-child(1) {
+                    margin-top: 35px;
+                }
             }
             .plan-section-item-2 {
                 background-image: url(images/plan-item2-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
+                padding: 0px 80px;
+                >p:nth-child(1) {
+                    margin-top: 20px;
+                }
             }
             .plan-section-item-3 {
                 background-image: url(images/plan-item3-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
-                padding: 0px 75px;
+                >p:nth-child(1) {
+                    margin-top: 32px;
+                }
             }
         }
         .plan-section-slider {
             display: none;
             .plan-section-item {
                 width: 400px;
-                height: 148px;
-                box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
+                height: 280px;
                 border-radius: 12px;
                 padding: 0px 54px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                margin-left: -25px;
+                margin-right: -25px;
                 >p {
                     text-align: left;
                 }
                 >p:nth-child(1) {
                     @include fonts.h6();
                     color: #4EBD09;
+                    margin-bottom: 8px;
                 }
                 >p:nth-child(2) {
                     @include fonts.t6();
@@ -365,21 +372,28 @@ body {
             .plan-section-item-1 {
                 background-image: url(images/plan-item1-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
+                >p:nth-child(1) {
+                    margin-top: 50px;
+                }
             }
             .plan-section-item-2 {
                 background-image: url(images/plan-item2-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
+                padding: 0px 65px;
+                >p:nth-child(1) {
+                    margin-top: 15px;
+                }
             }
             .plan-section-item-3 {
                 background-image: url(images/plan-item3-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
-                padding: 0px 75px;
+                padding: 0px 70px;
+                >p:nth-child(1) {
+                    margin-top: 40px;
+                }
             }
         }
         .plan-section-mobile-slider {
@@ -387,12 +401,11 @@ body {
             .plan-section-item {
                 width: 400px;
                 height: 148px;
-                box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
                 border-radius: 12px;
                 padding: 0px 54px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                
                 >p {
                     text-align: left;
                 }
@@ -408,27 +421,28 @@ body {
             .plan-section-item-1 {
                 background-image: url(images/plan-item1-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
             }
             .plan-section-item-2 {
                 background-image: url(images/plan-item2-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
             }
             .plan-section-item-3 {
                 background-image: url(images/plan-item3-img.png);
                 background-repeat: no-repeat;
-                background-position: 100%;
                 background-size: 100% 100%;
                 padding: 0px 75px;
             }
         }
         .plan-section-btn {
-            margin-top: 50px;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
             @include mainButton();
         }
+
     }
     .benefits-section {
         padding: 100px 0px;
@@ -917,8 +931,28 @@ body {
                 justify-content: center;
                 .plan-section-item {
                     width: 350px;
-                    height: 200px;
-                    padding: 0px 30px;
+                    height: 290px;
+                    padding: 0px 43px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+                .plan-section-item-1 {
+                    padding: 0px 60px;
+                    >p:nth-child(1) {
+                        margin-top: 30px;
+                    }
+                }
+                .plan-section-item-2 {
+                    padding: 0px 63px;
+                    >p:nth-child(1) {
+                        margin-top: 5px;
+                    }
+                }
+                .plan-section-item-3 {
+                    padding: 0px 70px;
+                    >p:nth-child(1) {
+                        margin-top: 30px;
+                    }
                 }
             }
         }
@@ -1027,6 +1061,12 @@ body {
                     @include mainButton();
                 }
             }
+            .suitable-slider {
+                display: none;
+            }
+            .suitable-slider-mobile {
+                display: none;
+            }
         }
         .aspect-section {
             padding: 50px 0px;
@@ -1038,13 +1078,34 @@ body {
         .plan-section {
             .plan-section-wrapper {
                 .plan-section-item {
+                    padding: 0px 40px;
                     width: 300px;
-                    height: 150px;
+                    height: 240px;
+                    margin-right: -15px;
+                    margin-left: -15px;
                     >p:nth-child(1) {
                         @include fonts.mobileT3();
+                        margin-bottom: 8px;
                     }
                     >p:nth-child(2) {
                         @include fonts.mobileT9();
+                    }
+                }
+                .plan-section-item-1 {
+                    >p:nth-child(1) {
+                        margin-top: 40px;
+                    }
+                }
+                .plan-section-item-2 {
+                    padding: 0px 45px;
+                    >p:nth-child(1) {
+                        margin-top: 6px;
+                    }
+                }
+                .plan-section-item-3 {
+                    padding: 0px 50px;
+                    >p:nth-child(1) {
+                        margin-top: 30px;
                     }
                 }
             }
@@ -1147,6 +1208,20 @@ body {
     }
 }
 
+@media(max-width: 829px) {
+    .main{
+        .plan-section {
+            .plan-section-wrapper {
+                .plan-section-item-1 {
+                    >p:nth-child(1) {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // For review and plan section slider
 @media(max-width: 715px) {
     .main {
@@ -1175,13 +1250,31 @@ body {
             }
         }
         .plan-section {
+            .slick-dotted.slick-slider {
+                margin-bottom: 0;
+            }
             .plan-section-wrapper {
                 display: none;
             }
             .plan-section-slider {
                 display: block;
+                .plan-section-item-1 {
+                    >p:nth-child(1) {
+                        margin-top: 45px;
+                    }
+                }
+                .plan-section-item-2 {
+                    >p:nth-child(1) {
+                        margin-top: 10px;
+                    }
+                }
+                .plan-section-item-3 {
+                    >p:nth-child(1) {
+                        margin-top: 35px;
+                    }
+                }
                 .slick-dots {
-                    bottom: -40px;
+                    bottom: 65px;
                 }
                 .slick-dots li {
                     margin: 0px 0px;
@@ -1196,6 +1289,9 @@ body {
                 .slick-track {
                     transform: translate3d(-30px, 0px, 0px);
                 }
+            }
+            .plan-section-btn {
+                bottom: 40px;
             }
         }
     }
@@ -1320,6 +1416,7 @@ body {
                     box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
                     border-radius: 12px;
                     margin-right: 8px;
+                    margin-bottom: 80px;
                     .suitable-item-header{
                         gap: 9px;
                         align-items: center;
@@ -1340,7 +1437,7 @@ body {
                     }
                 }
                 .slick-dots {
-                    bottom: -40px;
+                    bottom: 35px;
                 }
                 .slick-dots li {
                     margin: 0px 0px;
@@ -1357,8 +1454,13 @@ body {
                 }
             }
             .suitable-section-content {
+                position: relative;
                 .suitable-btn {
-                    width: 100%;
+                    position: absolute;
+                    bottom: -35px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 94%;
                 }
             }
         }
@@ -1387,9 +1489,28 @@ body {
                 margin-bottom: 24px;
                 text-align: left;
             }
+            .plan-section-slider {
+                .plan-section-item {
+                    width: 445px;
+                    height: 240px;
+                }
+                .plan-section-item-1 {
+                    >p:nth-child(1) {
+                        margin-top: 35px;
+                    }
+                }
+                .plan-section-item-3 {
+                    >p:nth-child(1) {
+                        margin-top: 25px;
+                    }
+                }
+                .slick-dots {
+                    bottom: 55px;
+                }
+            }
             .plan-section-btn {
-                margin-top: 30px;
-                width: 100%;
+                bottom: 25px;
+                width: 94%;
             }
         }
         .benefits-section {
@@ -1588,6 +1709,8 @@ body {
                 display: none;
             }
             .suitable-slider-mobile {
+                margin-left: -15px;
+                margin-right: -15px;
                 display: block;
                 .suitable-item {
                     max-width: 265px;
@@ -1597,6 +1720,7 @@ body {
                     box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
                     border-radius: 12px;
                     margin-right: 8px;
+                    margin-bottom: 75px;
                     .suitable-item-header{
                         gap: 9px;
                         align-items: center;
@@ -1617,7 +1741,7 @@ body {
                     }
                 }
                 .slick-dots {
-                    bottom: -40px;
+                    bottom: 35px;
                 }
                 .slick-dots li {
                     margin: 0px 0px;
@@ -1630,7 +1754,12 @@ body {
                     opacity: 1;
                 }
                 .slick-track {
-                    transform: translate3d(-30px, 0px, 0px);
+                    margin-left: 15px;
+                }
+            }
+            .suitable-section-content {
+                .suitable-btn {
+                    bottom: -32px;
                 }
             }
         }
@@ -1641,9 +1770,21 @@ body {
             .plan-section-mobile-slider {
                 display: block;
                 .plan-section-item {
-                    width: 292px;
-                    height: 112px;
-                    padding: 30px;
+                    width: 330px;
+                    height: 180px;
+                    padding-top: 20px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    margin-bottom: 30px;
+                }
+                .plan-section-item-1 {
+                    padding-top: 20px;
+                }
+                .plan-section-item-2 {
+                    padding: 10px 50px;
+                }
+                .plan-section-item-3 {
+                    padding: 18px 55px;
                 }
                 .slick-dots {
                     bottom: -40px;
@@ -1658,9 +1799,12 @@ body {
                     color: #989898;
                     opacity: 1;
                 }
-                .slick-track {
-                    transform: translate3d(-30px, 0px, 0px);
+                .slick-dots {
+                    bottom: 63px;
                 }
+            }
+            .plan-section-btn {
+                bottom: 32px;
             }
         }
     }
