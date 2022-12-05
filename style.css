@@ -88,25 +88,35 @@ body {
   height: 60px;
 }
 .header .header-menu {
-  gap: 0px 40px;
+  gap: 0px 10px;
+  height: 70px;
+  align-items: center;
 }
-.header .header-menu li {
-  list-style: none;
-}
-.header .header-menu li .header-menu-item.active {
-  color: #ffffff;
-  font-family: "Exo 2", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-}
-.header .header-menu li .header-menu-item {
+.header .header-menu .header-menu-item {
   color: #989898;
   text-decoration: none;
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 12px 20px;
+  border-radius: 14px;
+  transition: 0.3s all;
+}
+.header .header-menu .header-menu-item:hover {
+  border-color: #989898;
+}
+.header .header-menu .active {
+  color: #FFFFFF;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.header .header-menu .active:hover {
+  border-color: #FFFFFF;
 }
 .header .header-button {
   width: 184px;
