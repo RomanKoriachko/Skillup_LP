@@ -1191,6 +1191,9 @@ body {
   .main .review-section .review-section-content .review-section-content-img {
     margin-right: -15px;
   }
+  .main .speakers-section .speakers-section-wrapper {
+    gap: 50px;
+  }
   .main .aspect-section .aspect-section-content {
     gap: 150px;
   }
@@ -1352,6 +1355,12 @@ body {
   }
   .main .suitable-section .suitable-slider-mobile {
     display: none;
+  }
+  .main .speakers-section .speakers-section-wrapper {
+    flex-direction: column;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text {
+    padding: 0px 50px;
   }
   .main .aspect-section {
     padding: 50px 0px;
@@ -1709,6 +1718,51 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 94%;
+  }
+  .main .speakers-section .speakers-header {
+    text-align: left;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .main .speakers-section .speakers-section-wrapper {
+    gap: 30px;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item > img {
+    width: 246px;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text {
+    margin-top: 20px;
+    padding: 0px;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-name {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-theme {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-description {
+    margin-bottom: 10px;
+    gap: 13px;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-description .speakers-section-dot {
+    margin-top: 4px;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-text-item {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
   }
   .main .aspect-section .aspect-section-content {
     gap: 32px;

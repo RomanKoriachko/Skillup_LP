@@ -972,6 +972,11 @@ body {
                 }
             }
         }
+        .speakers-section {
+            .speakers-section-wrapper {
+                gap: 50px;
+            }
+        }
         .aspect-section {
             .aspect-section-content{
                 gap: 150px;
@@ -1117,6 +1122,16 @@ body {
             }
             .suitable-slider-mobile {
                 display: none;
+            }
+        }
+        .speakers-section {
+            .speakers-section-wrapper {
+                flex-direction: column;
+                .speaker-item {
+                    .speaker-text{
+                        padding: 0px 50px;
+                    }
+                }
             }
         }
         .aspect-section {
@@ -1512,6 +1527,43 @@ body {
                     left: 50%;
                     transform: translateX(-50%);
                     width: 94%;
+                }
+            }
+        }
+        .speakers-section {
+            .speakers-header {
+                text-align: left;
+                @include fonts.mobileH1();
+                margin-bottom: 30px;
+            }
+            .speakers-section-wrapper {
+                gap: 30px;
+                .speaker-item {
+                    >img{
+                        width: 246px;
+                    }
+                    .speaker-text {
+                        margin-top: 20px;
+                        padding: 0px;
+                        .speaker-name {
+                            @include fonts.mobileH3();
+                            margin-bottom: 20px;
+                        }
+                        .speaker-theme {
+                            @include fonts.mobileT3();
+                            margin-bottom: 20px;
+                        }
+                        .speaker-description {
+                            margin-bottom: 10px;
+                            gap: 13px;
+                            .speakers-section-dot {
+                                margin-top: 4px;
+                            }
+                        }
+                        .speaker-text-item {
+                            @include fonts.mobileT9();
+                        }
+                    }
                 }
             }
         }
