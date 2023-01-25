@@ -1719,6 +1719,10 @@ body {
     transform: translateX(-50%);
     width: 94%;
   }
+  .main .speakers-section {
+    padding-top: 48px;
+    padding-bottom: 0px;
+  }
   .main .speakers-section .speakers-header {
     text-align: left;
     font-family: "Exo 2", sans-serif;

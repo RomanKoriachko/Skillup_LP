@@ -1531,6 +1531,8 @@ body {
             }
         }
         .speakers-section {
+            padding-top: 48px;
+            padding-bottom: 0px;
             .speakers-header {
                 text-align: left;
                 @include fonts.mobileH1();
