@@ -367,6 +367,60 @@ body {
 .main .suitable-section .suitable-slider-mobile {
   display: none;
 }
+.main .speakers-section {
+  padding: 50px 0px;
+  background: #1F1E28;
+}
+.main .speakers-section .speakers-header {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 50px;
+}
+.main .speakers-section .speakers-section-wrapper {
+  justify-content: space-between;
+  gap: 100px;
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item {
+  text-align: center;
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text {
+  text-align: left;
+  margin-top: 50px;
+  padding-left: 60px;
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-name {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-theme {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 145%;
+  margin-bottom: 20px;
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-description {
+  margin-bottom: 15px;
+  gap: 13px;
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-description .speakers-section-dot {
+  min-width: 12px;
+  height: 12px;
+  margin-top: 6px;
+  background-image: url(images/speakers-section-dot.svg);
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-text-item {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+}
 .main .aspect-section {
   padding: 100px 0px;
 }

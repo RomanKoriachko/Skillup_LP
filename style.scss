@@ -272,6 +272,48 @@ body {
             display: none;
         }
     }
+    .speakers-section {
+        padding: 50px 0px;
+        background: #1F1E28;
+        .speakers-header {
+            text-align: center;
+            @include fonts.h2();
+            margin-bottom: 50px;
+        }
+        .speakers-section-wrapper {
+            justify-content: space-between;
+            gap: 100px;
+            .speaker-item {
+                text-align: center;
+                .speaker-text {
+                    text-align: left;
+                    margin-top: 50px;
+                    padding-left: 60px;
+                    .speaker-name {
+                        @include fonts.h4();
+                        margin-bottom: 20px;
+                    }
+                    .speaker-theme {
+                        @include fonts.h6();
+                        margin-bottom: 20px;
+                    }
+                    .speaker-description {
+                        margin-bottom: 15px;
+                        gap: 13px;
+                        .speakers-section-dot {
+                            min-width: 12px;
+                            height: 12px;
+                            margin-top: 6px;
+                            background-image: url(images/speakers-section-dot.svg);
+                        }
+                    }
+                    .speaker-text-item {
+                        @include fonts.t6();
+                    }
+                }
+            }
+        }
+    }
     .aspect-section {
         padding: 100px 0px;
         .aspect-section-content {
