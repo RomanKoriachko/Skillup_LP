@@ -1746,18 +1746,12 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 20px;
   }
   .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-theme {
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 20px;
-  }
-  .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-description {
-    margin-bottom: 10px;
-    gap: 13px;
   }
   .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text .speaker-description .speakers-section-dot {
     margin-top: 4px;

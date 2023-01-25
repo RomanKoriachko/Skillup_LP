@@ -1549,15 +1549,11 @@ body {
                         padding: 0px;
                         .speaker-name {
                             @include fonts.mobileH3();
-                            margin-bottom: 20px;
                         }
                         .speaker-theme {
                             @include fonts.mobileT3();
-                            margin-bottom: 20px;
                         }
                         .speaker-description {
-                            margin-bottom: 10px;
-                            gap: 13px;
                             .speakers-section-dot {
                                 margin-top: 4px;
                             }
