@@ -385,6 +385,10 @@ body {
 }
 .main .speakers-section .speakers-section-wrapper .speaker-item {
   text-align: center;
+  width: 50%;
+}
+.main .speakers-section .speakers-section-wrapper .speaker-item > img {
+  width: 100%;
 }
 .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text {
   text-align: left;
@@ -1358,6 +1362,12 @@ body {
   }
   .main .speakers-section .speakers-section-wrapper {
     flex-direction: column;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item {
+    width: 100%;
+  }
+  .main .speakers-section .speakers-section-wrapper .speaker-item > img {
+    width: 400px;
   }
   .main .speakers-section .speakers-section-wrapper .speaker-item .speaker-text {
     padding: 0px 50px;

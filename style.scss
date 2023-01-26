@@ -285,6 +285,10 @@ body {
             gap: 100px;
             .speaker-item {
                 text-align: center;
+                width: 50%;
+                >img{
+                    width: 100%;
+                }
                 .speaker-text {
                     text-align: left;
                     margin-top: 50px;
@@ -1128,6 +1132,10 @@ body {
             .speakers-section-wrapper {
                 flex-direction: column;
                 .speaker-item {
+                    width: 100%;
+                    >img{
+                        width: 400px;
+                    }
                     .speaker-text{
                         padding: 0px 50px;
                     }
